@@ -1,0 +1,16 @@
+{
+  "name": "Lagrange.Doc",
+  "version": "1.0.0",
+  "description": "Lagrange's document",
+  "main": "index.js",
+  "repository": "https://github.com/KusaGumina/Lagrange.Doc.git",
+  "license": "GPL-3.0",
+  "private": false,
+  "devDependencies": {
+    "vuepress": "^1.9.10"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  }
+}
