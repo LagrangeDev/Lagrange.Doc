@@ -1,16 +1,18 @@
 {
   "name": "Lagrange.Doc",
   "version": "1.0.0",
-  "description": "Lagrange's document",
+  "description": "Lagrange.Core's doc",
   "main": "index.js",
   "repository": "https://github.com/KusaGumina/Lagrange.Doc.git",
   "license": "GPL-3.0",
   "private": false,
   "devDependencies": {
-    "vuepress": "^1.9.10"
+    "vitepress": "^1.0.0-rc.29",
+    "vue": "^3.3.8"
   },
   "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   }
 }

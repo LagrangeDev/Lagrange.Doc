@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\.github",
+    "\\.github\\workflows"
   ],
-  "SelectedNode": "\\D:\\Lagrange.Doc",
   "PreviewInSolutionExplorer": false
 }
