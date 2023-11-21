@@ -1,6 +1,7 @@
 module.exports = {
     title: 'Lagrange 文档',
     description: 'Lagrange\'s document',
+    base: '/Lagrange.Doc/',
     themeConfig: {
         nav: [
             {
