@@ -83,6 +83,15 @@ module.exports = {
                     { text: '事件委托', link: '/Event/EventInvoker' },
                     { text: '事件数据', link: '/Event/EventArgs' }
                 ]
+            },
+            {
+                text: '发送',
+                link: '/Send/',
+                collapsed: true,
+                items: [
+                    { text: '发送消息', link: '/Send/SendMessage' },
+                    { text: '发送消息结果', link: '/Send/MessageResult' }
+                ]
             }
         ]
     }
