@@ -106,18 +106,20 @@ N/A
 
 向消息内加入一段xml
 
-### 加入文件该方法有多个重载
+### 加入文件
 
-1.指定图片路径(string)的重载
+该方法有多个重载
+
+1.指定文件路径(string)的重载
 
 ```csharp
-.Image(_filePath);
+.File(_filePath);
 ```
 
-2.指定图片二进制(byte[])的重载
+2.指定文件二进制(byte[])的重载
 
 ```csharp
-.Image(_file,_fileName);
+.File(_file,_fileName);
 ```
 
 向消息内加入一个文件
