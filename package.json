@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Lagrange.Core's doc",
   "main": "index.js",
-  "repository": "https://github.com/KusaGumina/Lagrange.Doc.git",
+  "repository": "https://github.com/LagrangeDev/Lagrange.Doc.git",
   "license": "GPL-3.0",
   "private": false,
   "devDependencies": {
