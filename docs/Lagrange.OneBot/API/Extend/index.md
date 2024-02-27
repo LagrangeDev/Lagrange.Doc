@@ -1,5 +1,59 @@
 # 拓展API
 
+## 获取收藏表情
+
+**方法名**：
+`fetch_custom_face`
+
+#### 该方法无参数
+
+**响应数据**
+
+| 字段            | 类型           | 说明       |
+|---------------|--------------|----------|
+| [RootElement] | List[string] | 表情的下载URL |
+
+
+## 获取好友历史消息记录
+
+**方法名**：
+`get_friend_msg_history`
+
+**参数**
+
+| 字段           | 类型     | 说明             |
+|--------------|--------|----------------|
+| `user_id`    | uint32 | 好友ID           |
+| `message_id` | int32  | 要获取的消息的最后一条的ID |
+| `count`      | int32  | 获取的消息数量        |
+
+**响应数据**
+
+| 字段         | 类型                         | 说明    |
+|------------|----------------------------|-------|
+| `messages` | List[OneBotPrivateMessage] | 获取的消息 |
+
+## 获取群组历史消息记录
+
+**方法名**：
+`get_group_msg_history`
+
+**参数**
+
+| 字段           | 类型     | 说明             |
+|--------------|--------|----------------|
+| `group_id`   | uint32 | 群组ID           |
+| `message_id` | int32  | 要获取的消息的最后一条的ID |
+| `count`      | int32  | 获取的消息数量        |
+
+**响应数据**
+
+| 字段 | 类型                       | 说明    |
+| --- |--------------------------|-------|
+| `messages` | List[OneBotGroupMessage] | 获取的消息 |
+
+
+
 ## 构造合并转发消息
 
 **方法名**：
@@ -9,7 +63,7 @@
 
 | 字段 | 类型 | 说明 |
 | --- | --- | --- |
-| `messages` | list[OneBotSegment.node] | 参考下方 |
+| `messages` | List[OneBotSegment.node] | 参考下方 |
 
 其中`OneBotSegment.node`的`data`部分要求如下
 
@@ -17,7 +71,7 @@
 | --- | --- | --- |
 | `name` | string | 自定义消息发送者昵称 |
 | `uin`  | string | 自定义消息发送者QQ号 |
-| `content` | list[OneBotSegment] | 消息内容 |
+| `content` | List[OneBotSegment] | 消息内容 |
 
 **响应数据**
 
