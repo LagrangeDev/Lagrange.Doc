@@ -1,1 +1,0 @@
-import{_ as e,o as a,c as t,R as n}from"./chunks/framework.n93kXFqc.js";const f=JSON.parse('{"title":"发送","description":"","frontmatter":{},"headers":[],"relativePath":"Send/index.md","filePath":"Send/index.md"}'),r={name:"Send/index.md"},o=n("",5),s=[o];function d(_,c,i,h,l,p){return a(),t("div",null,s)}const S=e(r,[["render",d]]);export{f as __pageData,S as default};
