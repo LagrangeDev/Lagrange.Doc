@@ -107,7 +107,6 @@ module.exports = {
                 items: [
                     {
                         text: "快速部署&配置",
-                        collapsed: false,
                         link: '/Lagrange.OneBot/Config/',
                     },
                     {
@@ -115,7 +114,14 @@ module.exports = {
                         collapsed: true,
                         items: [
                             { text: 'OneBot V11标准API', link: '/Lagrange.OneBot/API/OneBot/' },
-                            { text: '拓展API', link: '/Lagrange.OneBot/API/Extend/' },
+                            {
+                                text: '拓展API',
+                                link: '/Lagrange.OneBot/API/Extend/',
+                                collapsed: true,
+                                items: [
+                                    { text: "构造合并转发消息" }
+                                ]
+                            },
                         ]
                     },
                     {
