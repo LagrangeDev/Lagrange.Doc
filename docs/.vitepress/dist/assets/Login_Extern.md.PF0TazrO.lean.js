@@ -1,1 +1,0 @@
-import{_ as e,o as s,c as a,R as t}from"./chunks/framework.n93kXFqc.js";const y=JSON.parse('{"title":"扩展","description":"","frontmatter":{},"headers":[],"relativePath":"Login/Extern.md","filePath":"Login/Extern.md"}'),o={name:"Login/Extern.md"},n=t("",3),p=[n];function r(l,c,i,d,_,h){return s(),a("div",null,p)}const u=e(o,[["render",r]]);export{y as __pageData,u as default};
