@@ -12,6 +12,15 @@ module.exports = {
                         text: 'Lagrange.Core',
                         link: 'https://github.com/LagrangeDev/Lagrange.Core'
                     },
+
+                    {
+                        text: 'lagrangejs',
+                        link: 'https://github.com/LagrangeDev/lagrangejs'
+                    },
+                    {
+                        text: 'lagrange-python',
+                        link: 'https://github.com/LagrangeDev/lagrange-python'
+                    },
                     {
                         text: 'Lagrange.Doc',
                         link: 'https://github.com/LagrangeDev/Lagrange.Doc'
