@@ -16,6 +16,18 @@ NTQQ的SignServer不可与Android协议混用(如unidbg-fetch-qsign)
 本项目不主动提供SignServer 请前往README.md加入Telegram群聊以获取有效信息
 :::
 
+### 关于验证码
+::: warning 警告
+如果出现验证码登录的情况 推荐删除Keystore进行扫码登录
+
+验证码登录因为未知原因成功率较低
+:::
+NTQQ的验证码拥有两个参数 ticket与randomStr
+
+首先复制ticket参数到输入框内 按下回车确认
+
+再次复制randomStr参数到输入框内 按下回车确认
+
 ### 默认配置
 ```json5
 {
