@@ -21,6 +21,10 @@ var qrCode = await bot.FetchQrCode();
 
 可以将二维码的byte[]保存为本地png文件扫码，也可以用二维码生成工具把Url生成为二维码交给手机扫描
 
+::: tip 提示
+二维码内容链接需要被转换为二维码图片后通过手机 App 扫码登录，不要直接访问链接。
+:::
+
 ## 等待登陆
 
 在获取完二维码后,等待异步方法LoginByQrCode(),该方法会等待用户扫码并在扫码完毕后返回
@@ -28,3 +32,7 @@ var qrCode = await bot.FetchQrCode();
 ```csharp
 await bot.LoginByQrCode();
 ```
+
+::: tip 提示
+如果你正在进行概念验证，运行完登陆后程序不会自行退出，这是因为 BotContext 需要被你 Dispose。
+:::
