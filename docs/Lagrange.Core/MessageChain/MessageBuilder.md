@@ -17,7 +17,7 @@ var groupMessageChain = MessageBuilder.Group(_uin)
 ## 构造私聊消息MessageChain:
 
 ```csharp
-var groupMessageChain = MessageBuilder.Group(_uin)
+var privateMessageChain = MessageBuilder.Friend(_uin)
 ```
 
 该静态方法将接收一个uint作为目标用户的uin,返回一个MessageChain实例
