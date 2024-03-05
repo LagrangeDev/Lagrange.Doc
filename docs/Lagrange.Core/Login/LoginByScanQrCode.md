@@ -16,10 +16,10 @@ var qrCode = await bot.FetchQrCode();
 
 |  字段  |  类型  |     描述     |
 | :----: | :----: | :----------: |
-|  Url   | string |  二维码链接  |
-| QrCode | byte[] | 二维码byte[] |
+|  Url   | string |  二维码内容链接  |
+| QrCode | byte[] | 二维码PNG byte[] |
 
-可以直接访问Url扫码,也可以将二维码的byte[]保存为本地png文件扫码
+可以将二维码的byte[]保存为本地png文件扫码，也可以用二维码生成工具把Url生成为二维码交给手机扫描
 
 ## 等待登陆
 
