@@ -31,58 +31,60 @@ NTQQ的验证码拥有两个参数 ticket与randomStr
 ### 默认配置
 ```json5
 {
-  Logging: {
-    LogLevel: {
-      Default: "Information",  # 提Issue时请切换到Trace
-      Microsoft: "Warning",
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",  # 提Issue时请切换到Trace
+      "Microsoft": "Warning",
       "Microsoft.Hosting.Lifetime": "Information",
     },
   },
-  SignServerUrl: "",  # 寻求国外网友帮助.png
-  Account: {
-    Uin: 0,  # Uin填写0以使用扫码连接
-    Password: "",  # 不填写密码以使用扫码连接
-    Protocol: "Linux",  #推荐使用Linux协议
-    AutoReconnect: true,
-    GetOptimumServer: true,
+  "SignServerUrl": "",  # 寻求国外网友帮助.png
+  "Account": {
+    "Uin": 0,  # Uin填写0以使用扫码连接
+    "Password": "",  # 不填写密码以使用扫码连接
+    "Protocol": "Linux",  #推荐使用Linux协议
+    "AutoReconnect": true,
+    "GetOptimumServer": true,
   },
-  Message: {
-    IgnoreSelf: true,  # 忽略Bot自身的消息
+  "Message": {
+    "IgnoreSelf": true,  # 忽略Bot自身的消息
   },
-  Implementations: [  # 服务实现 支持多链接
+  "Implementations": [  # 服务实现 支持多链接
     {
-      Type: "ReverseWebSocket",
-      Host: "127.0.0.1",
-      Port: 8080,
-      Suffix: "/onebot/v11/ws",
-      ReconnectInterval: 5000,
-      HeartBeatInterval: 5000,
-      AccessToken: "",
+      "Type": "ReverseWebSocket",
+      "Host": "127.0.0.1",
+      "Port": 8080,
+      "Suffix": "/onebot/v11/ws",
+      "ReconnectInterval": 5000,
+      "HeartBeatInterval": 5000,
+      "AccessToken": "",
     },
     {
-      Type: "ForwardWebSocket",
-      Host: "127.0.0.1",
-      Port: 8081,
-      HeartBeatInterval: 5000,
-      AccessToken: "",
+      "Type": "ForwardWebSocket",
+      "Host": "127.0.0.1",
+      "Port": 8081,
+      "HeartBeatInterval": 5000,
+      "AccessToken": "",
     },
   ],
 }
 ```
+::: warning 注意
+复制粘贴前请删除所有#开头的注释
+:::
 
-<br/>
 
 ### 反向 WebSocket 配置
 
 ```json5
 {
-  Type: "ReverseWebSocket",
-  Host: "127.0.0.1",
-  Port: 8080,
-  Suffix: "/onebot/v11/ws",
-  ReconnectInterval: 5000,
-  HeartBeatInterval: 5000,
-  AccessToken: "",
+  "Type": "ReverseWebSocket",
+  "Host": "127.0.0.1",
+  "Port": 8080,
+  "Suffix": "/onebot/v11/ws",
+  "ReconnectInterval": 5000,
+  "HeartBeatInterval": 5000,
+  "AccessToken": "",
 }
 ```
 
@@ -92,10 +94,36 @@ NTQQ的验证码拥有两个参数 ticket与randomStr
 
 ```json5
 {
-  Type: "ForwardWebSocket",
-  Host: "127.0.0.1",
-  Port: 8081,
-  HeartBeatInterval: 5000,
-  AccessToken: "",
+  "Type": "ForwardWebSocket",
+  "Host": "127.0.0.1",
+  "Port": 8081,
+  "HeartBeatInterval": 5000,
+  "AccessToken": "",
+}
+```
+<br/>
+
+### Http POST配置
+
+```json5
+{
+  "Type": "HttpPost",
+  "Host": "127.0.0.1",
+  "Port": 8082,
+  "Suffix": "/",
+  "HeartBeatInterval": 5000,
+  "AccessToken": ""
+}
+```
+
+<br/>
+
+### 正向Http配置
+```json5
+{
+  "Type": "Http",
+  "Host": "*",
+  "Port": 8083,
+  "AccessToken": ""
 }
 ```
