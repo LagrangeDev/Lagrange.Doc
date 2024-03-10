@@ -25,9 +25,9 @@
 
 | 字段           | 类型     | 说明             |
 |--------------|--------|----------------|
-| `user_id`    | uint32 | 好友ID           |
-| `message_id` | int32  | 要获取的消息的最后一条的ID |
-| `count`      | int32  | 获取的消息数量        |
+| `user_id`    | uint | 好友ID           |
+| `message_id` | int  | 要获取的消息的最后一条的ID |
+| `count`      | int  | 获取的消息数量        |
 
 **响应数据**
 
@@ -44,9 +44,9 @@
 
 | 字段           | 类型     | 说明             |
 |--------------|--------|----------------|
-| `group_id`   | uint32 | 群组ID           |
-| `message_id` | int32  | 要获取的消息的最后一条的ID |
-| `count`      | int32  | 获取的消息数量        |
+| `group_id`   | uint | 群组ID           |
+| `message_id` | int  | 要获取的消息的最后一条的ID |
+| `count`      | int  | 获取的消息数量        |
 
 **响应数据**
 
@@ -123,7 +123,7 @@ async def test_send_forward_message(target_id: int):
 
 | 字段名       | 数据类型 | 说明        |
 | ------------ | -------- | ----------- |
-| `message_id` | int64    | 消息 ID     |
+| `message_id` | int    | 消息 ID     |
 | `forward_id` | string   | 转发消息 ID |
 
 
@@ -144,7 +144,7 @@ async def test_send_forward_message(target_id: int):
 
 | 字段名       | 数据类型 | 说明        |
 | ------------ | -------- | ----------- |
-| `message_id` | int64    | 消息 ID     |
+| `message_id` | int   | 消息 ID     |
 | `forward_id` | string   | 转发消息 ID |
 
 ## 上传群文件
@@ -156,7 +156,7 @@ async def test_send_forward_message(target_id: int):
 
 | 字段       | 类型   | 说明         |
 | ---------- | ------ | ------------ |
-| `group_id` | int64  | 群号         |
+| `group_id` | int  | 群号         |
 | `file`     | string | **本地**文件路径 |
 | `name`     | string | 储存名称     |
 | `folder`   | string | 父目录ID（可选）     |
@@ -174,6 +174,64 @@ async def test_send_forward_message(target_id: int):
 
 | 字段      | 类型   | 说明         |
 | --------- | ------ | ------------ |
-| `user_id` | int64  | 对方 QQ 号   |
+| `user_id` | int  | 对方 QQ 号   |
 | `file`    | string | **本地**文件路径 |
 | `name`    | string | 文件名称     |
+
+## 获取群根目录文件列表
+
+**方法名**：
+`get_group_root_files`
+
+**参数**
+
+| 字段       | 类型  | 说明 |
+| ---------- | ----- | ---- |
+| `group_id` | int | 群号 |
+
+**响应数据**
+
+| 字段      | 类型     | 说明       |
+| --------- | -------- | ---------- |
+| `files`   | List[File]   | 文件列表   |
+| `folders` | List[Folder] | 文件夹列表 |
+
+
+## 获取群子目录文件列表
+
+**方法名**：
+`get_group_files_by_folder`
+
+**参数**
+
+| 字段        | 类型   | 说明                        |
+| ----------- | ------ | --------------------------- |
+| `group_id`  | int  | 群号                        |
+| `folder_id` | string | 文件夹ID 参考 `Folder` 对象 |
+
+**响应数据**
+
+| 字段      | 类型     | 说明       |
+| --------- | -------- | ---------- |
+| `files`   | List[File]   | 文件列表   |
+| `folders` | List[Folder] | 文件夹列表 |
+
+
+## 获取群文件资源链接
+
+**方法名**：
+`get_group_file_url`
+
+**参数**
+
+| 字段       | 类型   | 说明                      |
+| ---------- | ------ | ------------------------- |
+| `group_id` | int    | 群号                      |
+| `file_id`  | string | 文件ID |
+| `busid`    | int    | 文件类型 |
+
+**响应数据**
+
+| 字段  | 类型   | 说明         |
+| ----- | ------ | ------------ |
+| `url` | string | 文件下载链接 |
