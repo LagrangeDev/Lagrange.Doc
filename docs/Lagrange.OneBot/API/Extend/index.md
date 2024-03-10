@@ -146,3 +146,34 @@ async def test_send_forward_message(target_id: int):
 | ------------ | -------- | ----------- |
 | `message_id` | int64    | 消息 ID     |
 | `forward_id` | string   | 转发消息 ID |
+
+## 上传群文件
+
+**方法名**：
+`upload_group_file`
+
+**参数**
+
+| 字段       | 类型   | 说明         |
+| ---------- | ------ | ------------ |
+| `group_id` | int64  | 群号         |
+| `file`     | string | **本地**文件路径 |
+| `name`     | string | 储存名称     |
+| `folder`   | string | 父目录ID（可选）     |
+
+::: tip 提示
+在不提供 `folder` 参数的情况下默认上传到根目录
+:::
+
+## 私聊发送文件
+
+**方法名**：
+`upload_private_file`
+
+**参数**
+
+| 字段      | 类型   | 说明         |
+| --------- | ------ | ------------ |
+| `user_id` | int64  | 对方 QQ 号   |
+| `file`    | string | **本地**文件路径 |
+| `name`    | string | 文件名称     |
