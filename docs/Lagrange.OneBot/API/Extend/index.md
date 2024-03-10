@@ -65,7 +65,7 @@
 
 | 字段 | 类型 | 说明 |
 | --- | --- | --- |
-| `messages` | List[[Node](../../Segment/Extend/index.md#Node)] | 参考下方 |
+| `messages` | List[[Node](../../Segment/Extend/index.md#node)] | 参考下方 |
 
 其中`OneBotSegment.node`的`data`部分要求如下
 
@@ -117,7 +117,7 @@ async def test_send_forward_message(target_id: int):
 | 字段       | 类型                     | 说明                                                         |
 | ---------- | ------------------------ | ------------------------------------------------------------ |
 | `group_id` | uint                     | 群号                                                         |
-| `messages` | List[[Node](../../Segment/Extend/index.md#Node)] | 自定义转发消息, 要求参看前文 |
+| `messages` | List[[Node](../../Segment/Extend/index.md#node)] | 自定义转发消息, 要求参看前文 |
 
 **响应数据**
 
@@ -138,7 +138,7 @@ async def test_send_forward_message(target_id: int):
 | 字段       | 类型           | 说明                                                         |
 | ---------- | ------------------------ | ------------------------------------------------------------ |
 | `user_id`  | uint                     | 好友QQ号                                                     |
-| `messages` | List[[Node](../../Segment/Extend/index.md#Node)] | 自定义转发消息, 要求参看前文 |
+| `messages` | List[[Node](../../Segment/Extend/index.md#node)] | 自定义转发消息, 要求参看前文 |
 
 **响应数据**
 
@@ -193,8 +193,8 @@ async def test_send_forward_message(target_id: int):
 
 | 字段      | 类型     | 说明       |
 | --------- | -------- | ---------- |
-| `files`   | List[[File](../../Segment/Extend/index.md#File)]   | 文件列表   |
-| `folders` | List[[Folder](../../Segment/Extend/index.md#Folder)] | 文件夹列表 |
+| `files`   | List[[File](../../Segment/Extend/index.md#file)]   | 文件列表   |
+| `folders` | List[[Folder](../../Segment/Extend/index.md#folder)] | 文件夹列表 |
 
 
 ## 获取群子目录文件列表
@@ -213,8 +213,8 @@ async def test_send_forward_message(target_id: int):
 
 | 字段      | 类型     | 说明       |
 | --------- | -------- | ---------- |
-| `files`   | List[[File](../../Segment/Extend/index.md#File)]   | 文件列表   |
-| `folders` | List[[Folder](../../Segment/Extend/index.md#Folder)] | 文件夹列表 |
+| `files`   | List[[File](../../Segment/Extend/index.md#file)]   | 文件列表   |
+| `folders` | List[[Folder](../../Segment/Extend/index.md#folder)] | 文件夹列表 |
 
 
 ## 获取群文件资源链接
