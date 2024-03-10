@@ -128,7 +128,17 @@ module.exports = {
                                 link: '/Lagrange.OneBot/API/Extend/',
                                 collapsed: true,
                                 items: [
-                                    { text: "构造合并转发消息" }
+									{ text: "获取收藏表情", link: '/Lagrange.OneBot/API/Extend/#获取收藏表情'},
+									{ text: "获取好友历史消息记录", link: '/Lagrange.OneBot/API/Extend/#获取好友历史消息记录' }, 
+									{ text: "获取群组历史消息记录", link: '/Lagrange.OneBot/API/Extend/#获取群组历史消息记录' },
+                                    { text: "构造合并转发消息", link: '/Lagrange.OneBot/API/Extend/#构造合并转发消息' },
+                                    { text: "发送合并转发(群聊)", link: '/Lagrange.OneBot/API/Extend/#发送合并转发(群聊)' },
+                                    { text: "发送合并转发(好友)", link: '/Lagrange.OneBot/API/Extend/#发送合并转发(好友)' },
+                                    { text: "上传群文件", link: '/Lagrange.OneBot/API/Extend/#上传群文件' },
+                                    { text: "私聊发送文件", link: '/Lagrange.OneBot/API/Extend/#私聊发送文件' },
+                                    { text: "获取群根目录文件列表", link: '/Lagrange.OneBot/API/Extend/#获取群根目录文件列表' },
+                                    { text: "获取群子目录文件列表", link: '/Lagrange.OneBot/API/Extend/#获取群子目录文件列表' },
+                                    { text: "获取群文件资源链接", link: '/Lagrange.OneBot/API/Extend/#获取群文件资源链接' }
                                 ]
                             },
                         ]
