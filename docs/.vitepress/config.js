@@ -138,7 +138,9 @@ module.exports = {
                                     { text: "私聊发送文件", link: '/Lagrange.OneBot/API/Extend/#私聊发送文件' },
                                     { text: "获取群根目录文件列表", link: '/Lagrange.OneBot/API/Extend/#获取群根目录文件列表' },
                                     { text: "获取群子目录文件列表", link: '/Lagrange.OneBot/API/Extend/#获取群子目录文件列表' },
-                                    { text: "获取群文件资源链接", link: '/Lagrange.OneBot/API/Extend/#获取群文件资源链接' }
+                                    { text: "获取群文件资源链接", link: '/Lagrange.OneBot/API/Extend/#获取群文件资源链接' },
+                                    { text: "好友戳一戳", link: '/Lagrange.OneBot/API/Extend/#好友戳一戳' },
+                                    { text: "群组戳一戳", link: '/Lagrange.OneBot/API/Extend/#群组戳一戳' }
                                 ]
                             },
                         ]
