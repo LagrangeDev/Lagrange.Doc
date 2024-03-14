@@ -250,3 +250,17 @@ async def test_send_forward_message(target_id: int):
 | ---------- | ---- | ---------- |
 | `group_id` | int  | 群号       |
 | `user_id`  | int  | 对方 QQ 号 |
+
+
+## 设置群组专属头衔
+
+**方法名**：
+`set_group_special_title`
+
+**参数**
+
+| 字段名          | 数据类型 | 默认值 | 说明                                                         |
+| --------------- | -------- | ------ | ------------------------------------------------------------ |
+| `group_id`      | uint     | -      | 群号                                                         |
+| `user_id`       | uint     | -      | 要设置的 QQ 号                                               |
+| `special_title` | string   | -      | 专属头衔, 空字符串表示删除专属头衔                             |
