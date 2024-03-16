@@ -114,7 +114,7 @@ module.exports = {
 								link: "/Lagrange.Core/MessageEntity/VideoEntity",
 							},
 							{
-								text: "Xml消息",
+								text: "XML 消息",
 								link: "/Lagrange.Core/MessageEntity/XmlEntity",
 							},
 						],
@@ -167,7 +167,7 @@ module.exports = {
 				collapsed: false,
 				items: [
 					{
-						text: "快速部署&配置",
+						text: "快速部署 & 配置",
 						link: "/Lagrange.OneBot/Config/",
 					},
 					{
