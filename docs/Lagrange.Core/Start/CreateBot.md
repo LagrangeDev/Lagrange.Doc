@@ -2,7 +2,7 @@
 
 ## BotContext 上下文类
 
-BotContext 是 Lagrange.Core 的核心实例, Event、Logger、Send 等操作都需要由该实例完成
+BotContext 是 Lagrange.Core 的核心实例, Event, Logger, Send 等操作都需要由该实例完成
 
 |   字段    |     类型     |                 描述                 |
 | :-------: | :----------: | :----------------------------------: |
@@ -12,7 +12,7 @@ BotContext 是 Lagrange.Core 的核心实例, Event、Logger、Send 等操作都
 
 BotContext 的构造需要由 BotFactory 工厂类创建, 其本身的构造函数私有化
 
-BotFactory 需要 BotConfig、DeviceInfo、KeyStore 作为参数, 返回 BotContext 实例
+BotFactory 需要 BotConfig, DeviceInfo, KeyStore 作为参数, 返回 BotContext 实例
 
 ```csharp
 var bot = BotFactory.Create(new BotConfig(), _deviceInfo, _keyStore);
