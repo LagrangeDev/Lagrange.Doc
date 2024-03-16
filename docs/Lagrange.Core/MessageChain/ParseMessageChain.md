@@ -4,7 +4,7 @@
 
 ```csharp
 var messageChain = new MessageChain();
-//假设有一个MessageChain
+//假设有一个 MessageChain
 foreach(var entity in messageChain)
 {
     if(entity is TextEntity textEntity)

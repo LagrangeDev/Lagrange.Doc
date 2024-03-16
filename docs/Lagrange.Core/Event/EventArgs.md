@@ -26,9 +26,9 @@
 |  `Tag`  |  `string`  | 发生的地点标签 |
 | `Level` | `LogLevel` |  事件消息概述  |
 
-ToString()方法覆写 返回日志概述
+`ToString()` 方法覆写，返回日志概述。
 
-日志内容为基类的 EventMessage
+日志内容为基类的 `EventMessage`。
 
 ## Bot 验证码事件 `BotCaptchaEvent`
 
@@ -77,16 +77,16 @@ ToString()方法覆写 返回日志概述
 
 ## Bot 所在群新增成员事件 `GroupMemberIncreaseEvent`
 
-|     字段     |  类型   |             描述             |
-| :----------: | :-----: | :--------------------------: |
-|  `GroupUin`  | `uint`  |            群 Uin            |
-| `MemberUin`  | `uint`  |           成员 Uin           |
-| `InvitorUin` | `uint?` | 邀请者 Uin (自己入群为 null) |
+|     字段     |  类型   |              描述              |
+| :----------: | :-----: | :----------------------------: |
+|  `GroupUin`  | `uint`  |             群 Uin             |
+| `MemberUin`  | `uint`  |            成员 Uin            |
+| `InvitorUin` | `uint?` | 邀请者 Uin (自己入群为 `null`) |
 
 ## Bot 所在群新增成员事件 `GroupMemberDecreaseEvent`
 
-|     字段      |  类型   |             描述             |
-| :-----------: | :-----: | :--------------------------: |
-|  `GroupUin`   | `uint`  |            群 Uin            |
-|  `MemberUin`  | `uint`  |           成员 Uin           |
-| `OperatorUin` | `uint?` | 操作者 Uin (主动退群为 null) |
+|     字段      |  类型   |              描述              |
+| :-----------: | :-----: | :----------------------------: |
+|  `GroupUin`   | `uint`  |             群 Uin             |
+|  `MemberUin`  | `uint`  |            成员 Uin            |
+| `OperatorUin` | `uint?` | 操作者 Uin (主动退群为 `null`) |

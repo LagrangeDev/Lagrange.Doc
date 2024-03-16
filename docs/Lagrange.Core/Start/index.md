@@ -4,4 +4,4 @@
 
 ## 导航
 
-1. [创建Bot实例](/Lagrange.Core/Start/CreateBot)
+1. [创建 Bot 实例](/Lagrange.Core/Start/CreateBot)
