@@ -11,9 +11,9 @@
 
 **响应数据**
 
-| 字段          | 类型         | 说明           |
-| ------------- | ------------ | -------------- |
-| [RootElement] | List[string] | 表情的下载 URL |
+| 字段            | 类型         | 说明           |
+| --------------- | ------------ | -------------- |
+| `[RootElement]` | List[string] | 表情的下载 URL |
 
 ## 获取好友历史消息记录
 
@@ -81,7 +81,7 @@
 :::tip 提示
 **发送合并转发消息**
 
-请使用标准消息发送 API 发送一个`"type": "forward", "id": Resid`的`OneBotSegment`消息
+请使用标准消息发送 API 发送一个 `"type": "forward", "id": Resid` 的 `OneBotSegment` 消息。
 
 **参考代码**
 
@@ -103,7 +103,7 @@ async def test_send_forward_message(target_id: int):
 
 :::
 
-## 发送合并转发(群聊)
+## 发送合并转发 (群聊)
 
 **方法名**：
 `send_group_forward_msg`
@@ -259,8 +259,8 @@ async def test_send_forward_message(target_id: int):
 
 **参数**
 
-| 字段名          | 数据类型 | 默认值 | 说明                                                         |
-| --------------- | -------- | ------ | ------------------------------------------------------------ |
-| `group_id`      | uint     | -      | 群号                                                         |
-| `user_id`       | uint     | -      | 要设置的 QQ 号                                               |
-| `special_title` | string   | -      | 专属头衔, 空字符串表示删除专属头衔                             |
+| 字段名          | 数据类型 | 默认值 | 说明                               |
+| --------------- | -------- | ------ | ---------------------------------- |
+| `group_id`      | uint     | -      | 群号                               |
+| `user_id`       | uint     | -      | 要设置的 QQ 号                     |
+| `special_title` | string   | -      | 专属头衔, 空字符串表示删除专属头衔 |

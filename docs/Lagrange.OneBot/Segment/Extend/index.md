@@ -30,8 +30,8 @@
 
 ## Node
 
-| 字段               | 类型   | 说明       |
-| ------------------ | ------ | ---------- |
-| `uin`              | int    | QQ号       |
-| `name     `        | string | 昵称       |
-| `content`          | List[OneBotSegment] / OneBotSegment  | 消息内容     |
+| 字段      | 类型                                | 说明     |
+| --------- | ----------------------------------- | -------- |
+| `uin`     | int                                 | QQ号     |
+| `name`    | string                              | 昵称     |
+| `content` | List[OneBotSegment] / OneBotSegment | 消息内容 |

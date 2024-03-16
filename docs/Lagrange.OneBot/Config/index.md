@@ -1,4 +1,4 @@
-# 快速部署&配置
+# 快速部署 & 配置
 
 ## 下载安装
 
@@ -58,7 +58,7 @@ NTQQ 的 SignServer **不可与 Android 协议混用**。（如 unidbg-fetch-qsi
 {
   "Logging": {
     "LogLevel": {
-      "Default": "Information",  // 提Issue时请切换到Trace
+      "Default": "Information",  // 提 Issue 时请切换到 Trace
       "Microsoft": "Warning",
       "Microsoft.Hosting.Lifetime": "Information",
     },
@@ -72,7 +72,7 @@ NTQQ 的 SignServer **不可与 Android 协议混用**。（如 unidbg-fetch-qsi
     "GetOptimumServer": true,
   },
   "Message": {
-    "IgnoreSelf": true,  // 忽略Bot自身的消息
+    "IgnoreSelf": true,  // 忽略 Bot 自身的消息
   },
   "Implementations": [  // 服务实现 支持多链接
     {
@@ -103,10 +103,15 @@ NTQQ 的 SignServer **不可与 Android 协议混用**。（如 unidbg-fetch-qsi
 
 服务实现目前支持以下多种方式，请根据需要添加到配置文件中的 `Implementations` 中。
 
-- [反向 WebSocket](#反向-websocket-配置)
-- [正向 WebSocket](#正向-websocket-配置)
-- [HTTP POST](#http-post-配置)
-- [正向 HTTP](#正向-http-配置)
+- [快速部署 \& 配置](#快速部署--配置)
+  - [下载安装](#下载安装)
+  - [运行](#运行)
+  - [配置文件](#配置文件)
+    - [反向 WebSocket 配置](#反向-websocket-配置)
+    - [正向 WebSocket 配置](#正向-websocket-配置)
+    - [HTTP POST 配置](#http-post-配置)
+    - [正向 HTTP 配置](#正向-http-配置)
+  - [关于验证码](#关于验证码)
 
 ### 反向 WebSocket 配置
 
@@ -172,4 +177,4 @@ NTQQ 的验证码拥有两个参数 `ticket` 与 `randomStr`。
 
 首先复制 `ticket` 参数到输入框内，按下回车确认。
 
-再次复制 `randomStr`参数到输入框内，按下回车确认。
+再次复制 `randomStr` 参数到输入框内，按下回车确认。

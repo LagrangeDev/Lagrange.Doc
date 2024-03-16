@@ -2,10 +2,10 @@
 
 MessageResult 为发送消息后异步返回的结果。
 
-|    字段     |  类型  |    描述     |
-| :---------: | :----: | :---------: |
-|  `Result`   | `uint` |     N/A     |
-| `Timestamp` | `uint` | Unix 时间戳 |
+|    字段     | 类型  |    描述     |
+| :---------: | :---: | :---------: |
+|  `Result`   | uint  |     N/A     |
+| `Timestamp` | uint  | Unix 时间戳 |
 
 :::tip 额外
 
