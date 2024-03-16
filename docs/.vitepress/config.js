@@ -235,6 +235,10 @@ module.exports = {
 										text: "群组戳一戳",
 										link: "/Lagrange.OneBot/API/Extend/#群组戳一戳",
 									},
+									{
+										text: "设置群组专属头衔",
+										link: "/Lagrange.OneBot/API/Extend/#设置群组专属头衔",
+									},
 								],
 							},
 						],
