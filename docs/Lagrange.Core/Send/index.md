@@ -4,6 +4,5 @@
 
 ## 导航
 
-1.[发送消息](/Lagrange.Core/Send/SendMessage)
-
-2.[发送消息结果](/Lagrange.Core/Send/MessageResult)
+1. [发送消息](/Lagrange.Core/Send/SendMessage)
+2. [发送消息结果](/Lagrange.Core/Send/MessageResult)

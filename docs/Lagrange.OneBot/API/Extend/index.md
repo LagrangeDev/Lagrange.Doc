@@ -2,22 +2,24 @@
 
 ## 获取收藏表情
 
-**方法名**：
+**方法名**
+
 `fetch_custom_face`
 
-:::tip 提示
+**参数**
+
 该方法无参数
-:::
 
 **响应数据**
 
-| 字段          | 类型         | 说明           |
-| ------------- | ------------ | -------------- |
-| [RootElement] | List[string] | 表情的下载 URL |
+| 字段            | 类型         | 说明           |
+| --------------- | ------------ | -------------- |
+| `[RootElement]` | List[string] | 表情的下载 URL |
 
 ## 获取好友历史消息记录
 
-**方法名**：
+**方法名**
+
 `get_friend_msg_history`
 
 **参数**
@@ -36,7 +38,8 @@
 
 ## 获取群组历史消息记录
 
-**方法名**：
+**方法名**
+
 `get_group_msg_history`
 
 **参数**
@@ -55,7 +58,8 @@
 
 ## 构造合并转发消息
 
-**方法名**：
+**方法名**
+
 `send_forward_msg`
 
 **参数**
@@ -81,7 +85,7 @@
 :::tip 提示
 **发送合并转发消息**
 
-请使用标准消息发送 API 发送一个`"type": "forward", "id": Resid`的`OneBotSegment`消息
+请使用标准消息发送 API 发送一个 `"type": "forward", "id": Resid` 的 `OneBotSegment` 消息
 
 **参考代码**
 
@@ -103,9 +107,10 @@ async def test_send_forward_message(target_id: int):
 
 :::
 
-## 发送合并转发(群聊)
+## 发送合并转发 (群聊)
 
-**方法名**：
+**方法名**
+
 `send_group_forward_msg`
 
 **参数**
@@ -124,7 +129,8 @@ async def test_send_forward_message(target_id: int):
 
 ## 发送合并转发(好友)
 
-**方法名**：
+**方法名**
+
 `send_private_forward_msg`
 
 **参数**
@@ -143,7 +149,8 @@ async def test_send_forward_message(target_id: int):
 
 ## 上传群文件
 
-**方法名**：
+**方法名**
+
 `upload_group_file`
 
 **参数**
@@ -161,7 +168,8 @@ async def test_send_forward_message(target_id: int):
 
 ## 私聊发送文件
 
-**方法名**：
+**方法名**
+
 `upload_private_file`
 
 **参数**
@@ -174,7 +182,8 @@ async def test_send_forward_message(target_id: int):
 
 ## 获取群根目录文件列表
 
-**方法名**：
+**方法名**
+
 `get_group_root_files`
 
 **参数**
@@ -192,7 +201,8 @@ async def test_send_forward_message(target_id: int):
 
 ## 获取群子目录文件列表
 
-**方法名**：
+**方法名**
+
 `get_group_files_by_folder`
 
 **参数**
@@ -211,7 +221,8 @@ async def test_send_forward_message(target_id: int):
 
 ## 获取群文件资源链接
 
-**方法名**：
+**方法名**
+
 `get_group_file_url`
 
 **参数**
@@ -230,7 +241,8 @@ async def test_send_forward_message(target_id: int):
 
 ## 好友戳一戳
 
-**方法名**：
+**方法名**
+
 `friend_poke`
 
 **参数**
@@ -241,7 +253,8 @@ async def test_send_forward_message(target_id: int):
 
 ## 群组戳一戳
 
-**方法名**：
+**方法名**
+
 `group_poke`
 
 **参数**
@@ -251,16 +264,16 @@ async def test_send_forward_message(target_id: int):
 | `group_id` | int  | 群号       |
 | `user_id`  | int  | 对方 QQ 号 |
 
-
 ## 设置群组专属头衔
 
-**方法名**：
+**方法名**
+
 `set_group_special_title`
 
 **参数**
 
-| 字段名          | 数据类型 | 默认值 | 说明                                                         |
-| --------------- | -------- | ------ | ------------------------------------------------------------ |
-| `group_id`      | uint     | -      | 群号                                                         |
-| `user_id`       | uint     | -      | 要设置的 QQ 号                                               |
-| `special_title` | string   | -      | 专属头衔, 空字符串表示删除专属头衔                             |
+| 字段名          | 数据类型 | 默认值 | 说明                               |
+| --------------- | -------- | ------ | ---------------------------------- |
+| `group_id`      | uint     | -      | 群号                               |
+| `user_id`       | uint     | -      | 要设置的 QQ 号                     |
+| `special_title` | string   | -      | 专属头衔, 空字符串表示删除专属头衔 |
