@@ -1,8 +1,7 @@
-# XmlEntity Xml消息
+# XmlEntity XML 消息
 
-Xml消息类,继承自接口IMessageEntity
+XML 消息类,继承自接口 `IMessageEntity`。
 
 | 字段 |  类型  |  描述   |
 | :--: | :----: | :-----: |
-| Xml  | string | xml内容 |
-
+| `Xml`  | `string` | XML 内容 |
