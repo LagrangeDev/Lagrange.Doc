@@ -29,9 +29,9 @@ var privateMessageChain = MessageBuilder.Friend(_uin)
 .Text(_text);
 ```
 
-|  字段  |   类型   |   描述   |
-| :----: | :------: | :------: |
-| `text` | `string` | 消息内容 |
+|  字段  |  类型  |   描述   |
+| :----: | :----: | :------: |
+| `text` | string | 消息内容 |
 
 向消息内加入一段文本。
 
@@ -59,10 +59,10 @@ var privateMessageChain = MessageBuilder.Friend(_uin)
    .Mention(_target);
    ```
 
-   |   字段    |   类型   |           描述            |
-   | :-------: | :------: | :-----------------------: |
-   | `target`  |  `uint`  |      提及的目标用户       |
-   | `display` | `string` | 显示的文本，默认为 `null` |
+   |   字段    |  类型  |           描述            |
+   | :-------: | :----: | :-----------------------: |
+   | `target`  |  uint  |      提及的目标用户       |
+   | `display` | string | 显示的文本，默认为 `null` |
 
 向消息内加入一个提及 (at)，备选参数 `display` 默认为 `null`，会自动补上 at 目标所显示的文本。
 
@@ -72,10 +72,10 @@ var privateMessageChain = MessageBuilder.Friend(_uin)
 .Face(_id);
 ```
 
-|   字段    |   类型   |             描述             |
-| :-------: | :------: | :--------------------------: |
-|   `id`    | `ushort` |           表情 ID            |
-| `isLarge` |  `bool`  | 是否为大表情，默认为 `false` |
+|   字段    |  类型  |             描述             |
+| :-------: | :----: | :--------------------------: |
+|   `id`    | ushort |           表情 ID            |
+| `isLarge` |  bool  | 是否为大表情，默认为 `false` |
 
 向消息内加入一个表情。
 
@@ -85,9 +85,9 @@ var privateMessageChain = MessageBuilder.Friend(_uin)
 .Forward(_text);
 ```
 
-|   字段   |      类型      |   描述   |
-| :------: | :------------: | :------: |
-| `target` | `MessageChain` | 目标消息 |
+|   字段   |     类型     |   描述   |
+| :------: | :----------: | :------: |
+| `target` | MessageChain | 目标消息 |
 
 让消息回复某个消息。
 
@@ -109,9 +109,9 @@ N/A
 .Xml(_xml);
 ```
 
-| 字段  |   类型   |   描述   |
-| :---: | :------: | :------: |
-| `xml` | `string` | XML 内容 |
+| 字段  |  类型  |   描述   |
+| :---: | :----: | :------: |
+| `xml` | string | XML 内容 |
 
 向消息内加入一段 XML。
 
