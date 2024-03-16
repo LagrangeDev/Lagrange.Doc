@@ -1,6 +1,6 @@
 # MessageChain 消息链
 
-消息链类，继承自 `List\<IMessageEntity>`。
+消息链类, 继承自 `List\<IMessageEntity>`
 
 如果为群聊消息:
 
@@ -24,5 +24,5 @@
 
 :::tip 补充
 
-消息的 Sequence 目前被封装为了 Internal，但是该字段在某些特殊情况可能会用到，请各位开发者自行考虑如何使用。
+消息的 Sequence 目前被封装为了 Internal, 但是该字段在某些特殊情况可能会用到, 请各位开发者自行考虑如何使用
 :::

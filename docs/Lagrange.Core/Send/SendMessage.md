@@ -14,5 +14,5 @@ var result = await bot.SendMessage(messageChain.Build());
 
 :::tip 补充
 
-发送消息成功后，对应的 XXXMessageEvent 会被自己的消息触发，可用于监听消息发送的状态。
+发送消息成功后, 对应的 XXXMessageEvent 会被自己的消息触发, 可用于监听消息发送的状态
 :::

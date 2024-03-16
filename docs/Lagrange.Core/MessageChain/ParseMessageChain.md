@@ -1,6 +1,6 @@
 # 解析消息链
 
-这里给出一个简单的示例。
+这里给出一个简单的示例
 
 ```csharp
 var messageChain = new MessageChain();

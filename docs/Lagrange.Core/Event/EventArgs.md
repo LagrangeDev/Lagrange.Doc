@@ -1,6 +1,6 @@
 # 事件数据 `EventArgs`
 
-本节介绍所有的事件被触发时传递的数据。
+本节介绍所有的事件被触发时传递的数据
 
 ## 数据基类 `EventBase`
 
@@ -26,9 +26,9 @@
 |  `Tag`  |  string  | 发生的地点标签 |
 | `Level` | LogLevel |  事件消息概述  |
 
-`ToString()` 方法覆写，返回日志概述。
+`ToString()` 方法覆写, 返回日志概述
 
-日志内容为基类的 `EventMessage`。
+日志内容为基类的 `EventMessage`
 
 ## Bot 验证码事件 `BotCaptchaEvent`
 

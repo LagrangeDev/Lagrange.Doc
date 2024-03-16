@@ -1,6 +1,6 @@
 # VideoEntity 视频消息
 
-视频消息类，继承自接口 `IMessageEntity`。
+视频消息类, 继承自接口 `IMessageEntity`
 
 |    字段    |  类型   |     描述     |
 | :--------: | :-----: | :----------: |
