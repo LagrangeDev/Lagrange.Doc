@@ -5,7 +5,7 @@
 下载 Lagrange.OneBot 可执行文件并解压
 
 1. 可以从 [Releases](https://github.com/LagrangeDev/Lagrange.Core/releases) 下载对应系统版本
-2. 还可以从 [Actions]([https://github.com/LagrangeDev/Lagrange.Core/actions](https://github.com/KonataDev/Lagrange.Core/actions/workflows/Lagrange.OneBot-build.yml)) 中获得当前最新的构建
+2. 还可以从 [Actions](https://github.com/KonataDev/Lagrange.Core/actions/workflows/Lagrange.OneBot-build.yml) 中获得当前最新的构建
 
 ::: warning 注意
 
