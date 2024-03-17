@@ -201,11 +201,11 @@ module.exports = {
 									},
 									{
 										text: "发送合并转发 (群聊)",
-										link: "/Lagrange.OneBot/API/Extend/#发送合并转发(群聊)",
+										link: "/Lagrange.OneBot/API/Extend/#发送合并转发-群聊",
 									},
 									{
 										text: "发送合并转发 (好友)",
-										link: "/Lagrange.OneBot/API/Extend/#发送合并转发(好友)",
+										link: "/Lagrange.OneBot/API/Extend/#发送合并转发-好友",
 									},
 									{
 										text: "上传群文件",

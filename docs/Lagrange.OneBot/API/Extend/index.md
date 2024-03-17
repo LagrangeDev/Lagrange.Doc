@@ -127,7 +127,7 @@ async def test_send_forward_message(target_id: int):
 | `message_id` | int      | 消息 ID     |
 | `forward_id` | string   | 转发消息 ID |
 
-## 发送合并转发(好友)
+## 发送合并转发 (好友)
 
 **方法名**
 
