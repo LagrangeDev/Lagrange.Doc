@@ -141,16 +141,22 @@ NTQQ 的 SignServer **不可与 Android 协议混用**（如 unidbg-fetch-qsign�
 
 ### HTTP POST 配置
 
-```json5
+```json5{3}
 {
   "Type": "HttpPost",
-  "Host": "127.0.0.1",
+  "Host": "127.0.0.1", // 可以填写前缀协议, 例如 `https://`
   "Port": 8082,
   "Suffix": "/",
   "HeartBeatInterval": 5000,
   "AccessToken": ""
 }
 ```
+
+::: warning 注意
+
+以 `//` 开头的为注释, 试图复制粘贴到实际的配置文件中时务必删除
+
+:::
 
 ### 正向 HTTP 配置
 
