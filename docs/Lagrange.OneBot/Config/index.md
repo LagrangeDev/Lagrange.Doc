@@ -153,7 +153,8 @@ NTQQ 的 SignServer **不可与 Android 协议混用**（如 unidbg-fetch-qsign�
   "Suffix": "/",
   "HeartBeatInterval": 5000,
   "HeartBeatEnable": true,
-  "AccessToken": ""
+  "AccessToken": "",
+  "Secret": ""
 }
 ```
 
