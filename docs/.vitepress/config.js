@@ -6,6 +6,9 @@ module.exports = {
 	cleanUrls: true,
 	lastUpdated: true,
 	themeConfig: {
+		search: {
+			provider: 'local'
+		},
 		nav: [
 			{ text: "首页", link: "/" },
 			{
