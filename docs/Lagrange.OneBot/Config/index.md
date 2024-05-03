@@ -54,7 +54,7 @@ NTQQ 的 SignServer **不可与 Android 协议混用**（如 unidbg-fetch-qsign�
 
 请注意几个重要的设置项需要手动配置：
 
-```json5{9,11-12,20-37}
+```json5{11-12,24-43}
 {
   "Logging": {
     "LogLevel": {
@@ -63,7 +63,7 @@ NTQQ 的 SignServer **不可与 Android 协议混用**（如 unidbg-fetch-qsign�
       "Microsoft.Hosting.Lifetime": "Information",
     },
   },
-  "SignServerUrl": "",  // Sign 地址, 必填, 请寻求国外网友帮助.png
+  "SignServerUrl": "https://sign.lagrangecore.org/api/sign",
   "Account": {
     "Uin": 0,  // Uin 填写 0 以使用扫码连接
     "Password": "",  // 不填写密码以使用扫码连接
@@ -73,6 +73,10 @@ NTQQ 的 SignServer **不可与 Android 协议混用**（如 unidbg-fetch-qsign�
   },
   "Message": {
     "IgnoreSelf": true,  // 忽略 Bot 自身的消息
+    "StringPost": false,
+  },
+  "QrCode": {
+    "ConsoleCompatibilityMode": false,
   },
   "Implementations": [  // 服务实现 支持多链接
     {
