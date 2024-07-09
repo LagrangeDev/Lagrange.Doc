@@ -64,6 +64,7 @@ NTQQ 的 SignServer **不可与 Android 协议混用**（如 unidbg-fetch-qsign�
     },
   },
   "SignServerUrl": "https://sign.lagrangecore.org/api/sign",
+  "MusicSignServerUrl": "",
   "Account": {
     "Uin": 0,  // Uin 填写 0 以使用扫码连接
     "Password": "",  // 不填写密码以使用扫码连接
