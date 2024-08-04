@@ -20,13 +20,13 @@ var bot = BotFactory.Create(new BotConfig(), _deviceInfo, _keyStore);
 
 ## BotConfig 配置类
 
-|         字段         |     类型      |                    描述                     |
-| :------------------: | :-----------: | :-----------------------------------------: |
-|      `Protocol`      |   Protocols   |           协议平台,默认为 `Linux`           |
-|   `AutoReconnect`    |     bool      |           自动重连,默认为 `true`            |
-|   `UseIPv6Network`   |     bool      |        是否使用 IPv6, 默认为 `false`        |
-|  `GetOptimumServer`  |     bool      | 自动使用链接状态最优的服务器, 默认为 `true` |
-| `CustomSignProvider` | SignProvider? |  自定义签名服务器, 无签名可能导致无法登陆   |
+|         字段         |     类型      |                                     描述                                     |
+| :------------------: | :-----------: | :--------------------------------------------------------------------------: |
+|      `Protocol`      |   Protocols   |                           协议平台,默认为 `Linux`                            |
+|   `AutoReconnect`    |     bool      |                            自动重连,默认为 `true`                            |
+|   `UseIPv6Network`   |     bool      |                        是否使用 IPv6, 默认为 `false`                         |
+|  `GetOptimumServer`  |     bool      |                 自动使用链接状态最优的服务器, 默认为 `true`                  |
+| `CustomSignProvider` | SignProvider? | 自定义签名服务器, 需要与 Protocol 和版本匹配, 不匹配或无签名可能导致无法登陆 |
 
 ## BotDeviceInfo 设备信息类
 

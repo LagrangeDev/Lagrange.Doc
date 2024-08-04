@@ -4,12 +4,25 @@
 
 下载 Lagrange.OneBot 可执行文件并解压
 
-1. 可以从 [Releases](https://github.com/LagrangeDev/Lagrange.Core/releases) 下载对应系统版本
+1. 可以从 [Releases](https://github.com/LagrangeDev/Lagrange.Core/releases) 下载对应系统版本 (该版本可能不为最新版本)
 2. 还可以从 [Actions](https://github.com/KonataDev/Lagrange.Core/actions/workflows/Lagrange.OneBot-build.yml) 中获得当前最新的构建
 
 ::: warning 注意
 
 从 Actions 下载的 Lagrange.OneBot 需要手动安装 .Net, 你应当自行安装对应版本的 [.Net SDK](https://dotnet.microsoft.com/zh-cn/download)
+
+:::
+
+::: danger 运行前请阅读
+
+遇到问题请按照以下步骤进行
+
+1. 查看 [Github 仓库](https://github.com/LagrangeDev/Lagrange.Core)中的 `README.md` 以确保没有配置错误
+
+2. 查看 [Github 仓库](https://github.com/LagrangeDev/Lagrange.Core)中的 Issue 查看此问题是否因为某种原因未能修复
+
+3. 将 application.json 中的 `Logging.LogLevel.Default` 改为 `Trace` 并重启 Lagrange 复现问题  
+   然后将 <span style="background: linear-gradient(to bottom right, skyblue, pink); color: black; font-weight: 900">Lagrange Lagrange Lagrange</span> 的日志 <span style="background: linear-gradient(to bottom right, skyblue, pink); color: black; font-weight: 900">全部 全部 全部 全部 全部 全部 全部 全部 全部</span> 复制并发送到 Issue 或群里提问
 
 :::
 
@@ -124,14 +137,14 @@ NTQQ 的 SignServer **不可与 Android 协议混用**（如 unidbg-fetch-qsign�
 
 ```json5
 {
-  "Type": "ReverseWebSocket",
-  "Host": "127.0.0.1",
-  "Port": 8080,
-  "Suffix": "/onebot/v11/ws",
-  "ReconnectInterval": 5000,
-  "HeartBeatInterval": 5000,
-  "HeartBeatEnable": true,
-  "AccessToken": "",
+	Type: "ReverseWebSocket",
+	Host: "127.0.0.1",
+	Port: 8080,
+	Suffix: "/onebot/v11/ws",
+	ReconnectInterval: 5000,
+	HeartBeatInterval: 5000,
+	HeartBeatEnable: true,
+	AccessToken: "",
 }
 ```
 
@@ -139,12 +152,12 @@ NTQQ 的 SignServer **不可与 Android 协议混用**（如 unidbg-fetch-qsign�
 
 ```json5
 {
-  "Type": "ForwardWebSocket",
-  "Host": "127.0.0.1",
-  "Port": 8081,
-  "HeartBeatInterval": 5000,
-  "HeartBeatEnable": true,
-  "AccessToken": "",
+	Type: "ForwardWebSocket",
+	Host: "127.0.0.1",
+	Port: 8081,
+	HeartBeatInterval: 5000,
+	HeartBeatEnable: true,
+	AccessToken: "",
 }
 ```
 
@@ -173,10 +186,10 @@ NTQQ 的 SignServer **不可与 Android 协议混用**（如 unidbg-fetch-qsign�
 
 ```json5
 {
-  "Type": "Http",
-  "Host": "*",
-  "Port": 8083,
-  "AccessToken": ""
+	Type: "Http",
+	Host: "*",
+	Port: 8083,
+	AccessToken: "",
 }
 ```
 
