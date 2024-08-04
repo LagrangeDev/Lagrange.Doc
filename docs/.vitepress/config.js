@@ -47,13 +47,8 @@ module.exports = {
 				collapsed: false,
 				items: [
 					{
-						text: "开始",
-						link: "/Lagrange.Core/Start/",
-						collapsed: true,
-						items: [
-							{ text: "快速上手", link: "/Lagrange.Core/QuickStart" },
-							{ text: "创建 Bot 实例", link: "/Lagrange.Core/Start/CreateBot" },
-						],
+						text: "创建 Bot 实例",
+						link: "/Lagrange.Core/CreateBot/"
 					},
 					{
 						text: "登录",
