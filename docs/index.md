@@ -1,3 +1,16 @@
+---
+layout: home
+
+hero:
+  name: Lagrange.Doc
+  tagline: Lagrange 使用手册
+  actions:
+    - text: 使用 Lagrange.Core
+      link: ./Lagrange.Core/index
+    - text: 使用 Lagrange.OneBot
+      link: ./Lagrange.OneBot/index
+---
+
 # 简介
 
 Lagrange.Core 是一个开源的 NTQQ 协议实现, 当前处于稳定期, 免责声明详见项目主页
