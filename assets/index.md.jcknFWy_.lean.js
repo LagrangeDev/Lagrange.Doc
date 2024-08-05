@@ -1,1 +1,0 @@
-import{_ as e,c as a,o,a4 as t}from"./chunks/framework.DUCr4ECn.js";const q=JSON.parse('{"title":"简介","description":"","frontmatter":{},"headers":[],"relativePath":"index.md","filePath":"index.md","lastUpdated":1722769212000}'),n={name:"index.md"},r=t("",8),i=[r];function d(s,h,c,_,l,u){return o(),a("div",null,i)}const f=e(n,[["render",d]]);export{q as __pageData,f as default};
