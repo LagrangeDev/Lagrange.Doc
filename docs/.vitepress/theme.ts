@@ -17,7 +17,10 @@ export const theme: DefaultTheme.Config = {
 					text: "Lagrange.Core",
 					link: "https://github.com/LagrangeDev/Lagrange.Core",
 				},
-
+				{
+					text: "LagrangeGo",
+					link: "https://github.com/LagrangeDev/LagrangeGo",
+				},
 				{
 					text: "lagrangejs",
 					link: "https://github.com/LagrangeDev/lagrangejs",
