@@ -77,6 +77,7 @@ NTQQ 的 SignServer **不可与 Android 协议混用**（如 unidbg-fetch-qsign�
     },
   },
   "SignServerUrl": "https://sign.lagrangecore.org/api/sign",
+  "SignProxyUrl": "", //留空不使用代理,仅支持http代理, example: http://127.0.0.1:7890
   "MusicSignServerUrl": "",
   "Account": {
     "Uin": 0,  // Uin 填写 0 以使用扫码连接
