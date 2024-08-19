@@ -145,7 +145,7 @@ NTQQ 的 SignServer **不可与 Android 协议混用**（如 unidbg-fetch-qsign�
 	"ReconnectInterval": 5000,
 	"HeartBeatInterval": 5000,
 	"HeartBeatEnable": true,
-	"AccessToken": "",
+	"AccessToken": ""
 }
 ```
 
@@ -158,7 +158,7 @@ NTQQ 的 SignServer **不可与 Android 协议混用**（如 unidbg-fetch-qsign�
 	"Port": 8081,
 	"HeartBeatInterval": 5000,
 	"HeartBeatEnable": true,
-	"AccessToken": "",
+	"AccessToken": ""
 }
 ```
 
@@ -190,7 +190,7 @@ NTQQ 的 SignServer **不可与 Android 协议混用**（如 unidbg-fetch-qsign�
 	"Type": "Http",
 	"Host": "*",
 	"Port": 8083,
-	"AccessToken": "",
+	"AccessToken": ""
 }
 ```
 
