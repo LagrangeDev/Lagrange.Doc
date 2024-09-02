@@ -7,8 +7,8 @@ BotContext 是 Lagrange.Core 的核心实例, Event, Logger, Send 等操作都�
 |   字段    |     类型     |                 描述                 |
 | :-------: | :----------: | :----------------------------------: |
 | `Invoker` | EventInvoker | 所有 Event 的集合,用于订阅并处理消息 |
-| `BotUin`  |     uint     |              登陆的账号              |
-| `BotName` |    string    |            登陆账号的昵称            |
+| `BotUin`  |     uint     |              登录的账号              |
+| `BotName` |    string    |            登录账号的昵称            |
 
 BotContext 的构造需要由 BotFactory 工厂类创建, 其本身的构造函数私有化
 
@@ -26,7 +26,7 @@ var bot = BotFactory.Create(new BotConfig(), _deviceInfo, _keyStore);
 |   `AutoReconnect`    |     bool      |                            自动重连,默认为 `true`                            |
 |   `UseIPv6Network`   |     bool      |                        是否使用 IPv6, 默认为 `false`                         |
 |  `GetOptimumServer`  |     bool      |                 自动使用链接状态最优的服务器, 默认为 `true`                  |
-| `CustomSignProvider` | SignProvider? | 自定义签名服务器, 需要与 Protocol 和版本匹配, 不匹配或无签名可能导致无法登陆 |
+| `CustomSignProvider` | SignProvider? | 自定义签名服务器, 需要与 Protocol 和版本匹配, 不匹配或无签名可能导致无法登录 |
 
 ## BotDeviceInfo 设备信息类
 
@@ -54,10 +54,10 @@ private BotDeviceInfo _deviceInfo = new()
 
 ## BotKeyStore 密钥存储类
 
-由序列化现有 KeyStore 创建, 或由初始构造方法自动创建, 登陆成功后可使用
+由序列化现有 KeyStore 创建, 或由初始构造方法自动创建, 登录成功后可使用
 
 ```csharp
 _keyStore = bot.UpdateKeystore();
 ```
 
-更新获取 KeyStore 序列化至本地存储,方便下次快速登陆
+更新获取 KeyStore 序列化至本地存储,方便下次快速登录
