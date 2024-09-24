@@ -92,17 +92,14 @@
 ::: code-group
 
 ```python{10-11} [Nonebot OneBot V11]
-from nonebot.adapters.onebot.v11 import MessageSegment
+from nonebot.adapters.onebot.v11 import MessageSegment, Message, Bot
 
-async def test_send_forward_message(target_id: int):
-    messages = [
-        {
-            "type": "node",
-            "data": {"name": "小助手", "uin": "2854196310", "content": [MessageSegment.text("测试消息")]},
-        }
-    ]
-    res_id = await bot.call_api("send_forward_msg", messages=messages)
-    await bot.send_group_msg(group_id=target_id, message=MessageSegment.forward(res_id))
+async def test_send_forward_message(bot: Bot, target_id: int):
+    messages = MessageSegment.node_custom(
+        user_id=2854196310, nickname="小助手", content=Message(MessageSegment.text("测试消息"))
+    )
+    res_id = await bot.call_api("send_forward_msg", messages=Message(messages))
+    await bot.send_group_msg(group_id=target_id, message=Message(MessageSegment.forward(res_id)))
 ```
 
 :::
