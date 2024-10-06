@@ -9,7 +9,7 @@ hero:
       link: ./Lagrange.Core/index
     - text: 使用 Lagrange.OneBot
       link: ./Lagrange.OneBot/index
-    - text: 使用LagrangeGo
+    - text: 使用 LagrangeGo
       link: ./LagrangeGo/index
 ---
 
