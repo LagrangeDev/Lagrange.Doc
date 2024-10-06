@@ -70,3 +70,22 @@ export const oneBotNav = {
 		},
 	],
 }
+
+export const goNav = {
+	text: "LagrangeGo",
+	base: "",
+	items: [
+		{
+			text: "LagrangeGo",
+			link: "/LagrangeGo/",
+		},
+		{
+			text: "Bot 实例",
+			link: "/LagrangeGo/CreateBot/",
+		},
+		{
+			text: "登录",
+			link: "/LagrangeGo/Login/",
+		},
+	],
+}

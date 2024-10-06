@@ -1,15 +1,16 @@
 import { DefaultTheme } from "vitepress"
-import { coreSidebar, oneBotSidebar } from "./catalogue"
-import { coreNav, oneBotNav } from "./nav"
+import { coreSidebar, goSidebar, oneBotSidebar } from "./catalogue"
+import { coreNav, goNav, oneBotNav } from "./nav"
 
 export const theme: DefaultTheme.Config = {
 	search: {
-		provider: 'local'
+		provider: "local",
 	},
 	nav: [
 		{ text: "首页", link: "/" },
 		coreNav,
 		oneBotNav,
+		goNav,
 		{
 			text: "GitHub",
 			items: [
@@ -39,13 +40,13 @@ export const theme: DefaultTheme.Config = {
 	sidebar: {
 		"/Lagrange.Core/": coreSidebar,
 		"/Lagrange.OneBot/": oneBotSidebar,
+		"/LagrangeGo/": goSidebar,
 	} as DefaultTheme.SidebarMulti,
 	socialLinks: [
 		{ icon: "github", link: "https://github.com/LagrangeDev/Lagrange.Doc" },
 	],
 	editLink: {
-		pattern:
-			"https://github.com/LagrangeDev/Lagrange.Doc/edit/main/docs/:path",
+		pattern: "https://github.com/LagrangeDev/Lagrange.Doc/edit/main/docs/:path",
 		text: "在 GitHub 上帮助我们完善这个页面",
 	},
 	docFooter: {
