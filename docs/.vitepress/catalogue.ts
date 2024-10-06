@@ -29,7 +29,7 @@ export const coreSidebar = {
 				},
 				{
 					text: "扩展",
-					link: "/Lagrange.Core/Login/Extern"
+					link: "/Lagrange.Core/Login/Extern",
 				},
 			],
 		},
@@ -220,6 +220,32 @@ export const oneBotSidebar = {
 				},
 				{ text: "拓展消息链", link: "/Lagrange.OneBot/Segment/Extend/" },
 			],
+		},
+	],
+}
+
+export const goSidebar = {
+	text: "LagrangeGo",
+	base: "",
+	items: [
+		{
+			text: "LagrangeGo",
+			link: "/LagrangeGo/",
+		},
+		{
+			text: "Bot实例",
+			items: [{ text: "创建bot实例", link: "/LagrangeGo/CreateBot/" }],
+		},
+		{
+			text: "登录",
+			items: [
+				{ text: "登录", link: "/LagrangeGo/Login/" },
+				{ text: "完整示例", link: "/LagrangeGo/Example/" },
+			],
+		},
+		{
+			text: "事件",
+			items: [{ text: "概述", link: "/LagrangeGo/Event/" }],
 		},
 	],
 }

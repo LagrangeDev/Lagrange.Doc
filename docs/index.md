@@ -9,6 +9,8 @@ hero:
       link: ./Lagrange.Core/index
     - text: 使用 Lagrange.OneBot
       link: ./Lagrange.OneBot/index
+    - text: 使用LagrangeGo
+      link: ./LagrangeGo/index
 ---
 
 # 简介
@@ -26,3 +28,7 @@ Lagrange.Core 是一个开源的 NTQQ 协议实现, 当前处于稳定期, 免�
 ### "希望对接其他 Bot 框架 (NoneBot2, Koishi ...)"
 
 前往 [Lagrange.OneBot](./Lagrange.OneBot/index.md) 查看如何配置 `Lagrange.OneBot`
+
+### "喜欢更简易轻量的golang？"
+
+前往 [LagrangeGo](LagrangeGo/index.md)
