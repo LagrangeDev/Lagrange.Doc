@@ -253,3 +253,26 @@ export const goSidebar = {
 		},
 	],
 }
+
+export const pythonSidebar = {
+	text: "lagrange-python",
+	base: "",
+	items: [
+		{
+			text: "lagrange-python",
+			link: "/lagrange-python/"
+		},
+		{
+			text: "登录",
+			items: [
+				{ text: "登录", link: "/lagrange-python/Login" }
+			]
+		},
+		{
+			text: "事件",
+			items: [
+				{ text: "事件", link: "/lagrange-python/Event" }
+			]
+		}
+	]
+}
