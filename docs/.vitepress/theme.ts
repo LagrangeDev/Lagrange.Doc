@@ -1,6 +1,6 @@
 import { DefaultTheme } from "vitepress"
 import { coreSidebar, goSidebar, oneBotSidebar } from "./catalogue"
-import { coreNav, goNav, oneBotNav } from "./nav"
+import { coreNav, goNav, oneBotNav, pythonNav } from "./nav"
 
 export const theme: DefaultTheme.Config = {
 	search: {
@@ -11,6 +11,7 @@ export const theme: DefaultTheme.Config = {
 		coreNav,
 		oneBotNav,
 		goNav,
+		pythonNav,
 		{
 			text: "GitHub",
 			items: [
@@ -41,6 +42,7 @@ export const theme: DefaultTheme.Config = {
 		"/Lagrange.Core/": coreSidebar,
 		"/Lagrange.OneBot/": oneBotSidebar,
 		"/LagrangeGo/": goSidebar,
+		"/Lagrange-Python/": pythonNav
 	} as DefaultTheme.SidebarMulti,
 	socialLinks: [
 		{ icon: "github", link: "https://github.com/LagrangeDev/Lagrange.Doc" },

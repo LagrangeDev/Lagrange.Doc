@@ -207,10 +207,6 @@ export const oneBotSidebar = {
 							text: "设置群组专属头衔",
 							link: "/Lagrange.OneBot/API/Extend/#设置群组专属头衔",
 						},
-						{
-							text: "设置群消息表情回应",
-							link: "/Lagrange.OneBot/API/Extend/#设置群消息表情回应",
-						},
 					],
 				},
 			],
@@ -252,4 +248,27 @@ export const goSidebar = {
 			items: [{ text: "概述", link: "/LagrangeGo/Event/" }],
 		},
 	],
+}
+
+export const pythonSidebar = {
+	text: "Lagrange-Python",
+	base: "",
+	items: [
+		{
+			text: "Lagrange-Python",
+			link: "/Lagrange-Python/"
+		},
+		{
+			text: "登录",
+			items: [
+				{ text: "登录", link: "/Lagrange-Python/Login" }
+			]
+		},
+		{
+			text: "事件",
+			items: [
+				{ text: "事件", link: "/Lagrange-Python/Event" }
+			]
+		}
+	]
 }

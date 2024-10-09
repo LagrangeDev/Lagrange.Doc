@@ -89,3 +89,22 @@ export const goNav = {
 		},
 	],
 }
+
+export const pythonNav = {
+	text: "Lagrange-Python",
+	base: "",
+	items: [
+		{
+			text: "Lagrange-Python",
+			link: "/Lagrange-Python/",
+		},
+		{
+			text: "Bot 实例",
+			link: "/Lagrange-Python/CreateBot/",
+		},
+		{
+			text: "事件",
+			link: "/Lagrange-Python/Event/",
+		},
+	],
+}
