@@ -255,23 +255,23 @@ export const goSidebar = {
 }
 
 export const pythonSidebar = {
-	text: "Lagrange-Python",
+	text: "lagrange-python",
 	base: "",
 	items: [
 		{
-			text: "Lagrange-Python",
-			link: "/Lagrange-Python/"
+			text: "lagrange-python",
+			link: "/lagrange-python/"
 		},
 		{
 			text: "登录",
 			items: [
-				{ text: "登录", link: "/Lagrange-Python/Login" }
+				{ text: "登录", link: "/lagrange-python/Login" }
 			]
 		},
 		{
 			text: "事件",
 			items: [
-				{ text: "事件", link: "/Lagrange-Python/Event" }
+				{ text: "事件", link: "/lagrange-python/Event" }
 			]
 		}
 	]

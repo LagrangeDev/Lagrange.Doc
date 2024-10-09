@@ -1,6 +1,6 @@
 # 事件
 
-与`LagrangeGo`类似，`Lagrange-Python`亦采用事件订阅制。
+`lagrange-python`采用事件订阅制。
 
 `创建 Bot 实例`章节中，初始化的实例具有`subscribe`方法，可以使用该方法进行订阅事件。
 

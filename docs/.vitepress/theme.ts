@@ -42,7 +42,7 @@ export const theme: DefaultTheme.Config = {
 		"/Lagrange.Core/": coreSidebar,
 		"/Lagrange.OneBot/": oneBotSidebar,
 		"/LagrangeGo/": goSidebar,
-		"/Lagrange-Python/": pythonNav
+		"/lagrange-python/": pythonNav
 	} as DefaultTheme.SidebarMulti,
 	socialLinks: [
 		{ icon: "github", link: "https://github.com/LagrangeDev/Lagrange.Doc" },

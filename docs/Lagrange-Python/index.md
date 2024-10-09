@@ -1,8 +1,8 @@
-# Lagrange-Python
+# lagrange-python
 
 ## 快速开始
 
-Lagrange-Python 有两种下载方式可供选择：
+lagrange-python 有两种下载方式可供选择：
 
 - 从`PyPI`拉取最新`Release`;
 - 直接从[项目 GitHub 主页](https://github.com/LagrangeDev/lagrange-python)拉取最新`commit`。

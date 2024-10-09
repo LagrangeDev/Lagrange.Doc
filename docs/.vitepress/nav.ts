@@ -91,20 +91,20 @@ export const goNav = {
 }
 
 export const pythonNav = {
-	text: "Lagrange-Python",
+	text: "lagrange-python",
 	base: "",
 	items: [
 		{
-			text: "Lagrange-Python",
-			link: "/Lagrange-Python/",
+			text: "lagrange-python",
+			link: "/lagrange-python/",
 		},
 		{
 			text: "Bot 实例",
-			link: "/Lagrange-Python/CreateBot/",
+			link: "/lagrange-python/CreateBot/",
 		},
 		{
 			text: "事件",
-			link: "/Lagrange-Python/Event/",
+			link: "/lagrange-python/Event/",
 		},
 	],
 }
