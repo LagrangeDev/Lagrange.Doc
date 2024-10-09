@@ -274,3 +274,18 @@ async def test_send_forward_message(bot: Bot, target_id: int):
 | `group_id`      | uint     | -      | 群号                               |
 | `user_id`       | uint     | -      | 要设置的 QQ 号                     |
 | `special_title` | string   | -      | 专属头衔, 空字符串表示删除专属头衔 |
+
+## 设置群消息表情回应
+
+**方法名**
+
+`set_group_reaction`
+
+**参数**
+
+| 字段名          | 数据类型 | 默认值 | 说明                               |
+| --------------- | -------- | ------ | ---------------------------------- |
+| `group_id`      | uint     | -      | 群号                               |
+| `message_id`    | int      | -      | 消息 ID                            |
+| `code`          | string   | -      | 表情 ID                            |
+| `is_add`        | bool     | -      | 添加/取消 回应                      |
