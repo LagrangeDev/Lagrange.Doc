@@ -207,6 +207,10 @@ export const oneBotSidebar = {
 							text: "设置群组专属头衔",
 							link: "/Lagrange.OneBot/API/Extend/#设置群组专属头衔",
 						},
+						{
+							text: "设置群消息表情回应",
+							link: "/Lagrange.OneBot/API/Extend/#设置群消息表情回应",
+						},
 					],
 				},
 			],
