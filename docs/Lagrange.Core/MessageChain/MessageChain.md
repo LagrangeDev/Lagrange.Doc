@@ -1,6 +1,6 @@
 # MessageChain 消息链
 
-消息链类, 继承自 `List\<IMessageEntity>`
+消息链类, 继承自 `List<IMessageEntity>`
 
 如果为群聊消息:
 
