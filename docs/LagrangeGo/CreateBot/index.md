@@ -15,7 +15,7 @@ func NewClient(uin uint32, appInfo *auth.AppInfo, signUrl ...string) *QQClient
 示例
 
 ```go
-qqclient := client.NewClient(0, appInfo，"https://sign.lagrangecore.org/api/sign")
+qqclient := client.NewClient(0, appInfo，"https://sign.lagrangecore.org/api/sign/25765")
 ```
 
 ## DeviceInfo
