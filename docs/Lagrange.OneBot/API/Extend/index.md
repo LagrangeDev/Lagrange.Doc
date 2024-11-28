@@ -314,7 +314,7 @@ async def test_send_forward_message(bot: Bot, target_id: int):
 | --------------- | -------- | ------ | ---------------------------------- |
 | `message_id`    | int      | -      | 消息 ID                            |
 
-## 设置群精华消息
+## 获取群精华消息列表
 
 **方法名**
 
