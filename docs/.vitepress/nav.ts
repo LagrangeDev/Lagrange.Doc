@@ -46,27 +46,8 @@ export const oneBotNav = {
 			link: "/Lagrange.OneBot/Config/",
 		},
 		{
-			text: "API",
-			items: [
-				{
-					text: "OneBot V11 标准 API",
-					link: "/Lagrange.OneBot/API/OneBot/",
-				},
-				{
-					text: "拓展 API",
-					link: "/Lagrange.OneBot/API/Extend/",
-				},
-			],
-		},
-		{
-			text: "Segment",
-			items: [
-				{
-					text: "OneBot V11 标准消息链",
-					link: "/Lagrange.OneBot/Segment/OneBot/",
-				},
-				{ text: "拓展消息链", link: "/Lagrange.OneBot/Segment/Extend/" },
-			],
+			text: 'Apifox',
+			link: 'https://lagrange-onebot.apifox.cn/',
 		},
 	],
 }

@@ -1,3 +1,9 @@
+::: warning 注意
+
+此文档已经过时, 请参阅 [Apifox 上的 Lagrange.OneBot 文档](https://lagrange-onebot.apifox.cn/) 以获取最新的 API 文档。
+
+:::
+
 # OneBot V11 标准消息链
 
 请参考 [OneBot V11 Segment](https://github.com/botuniverse/onebot-11/blob/master/message/segment.md)

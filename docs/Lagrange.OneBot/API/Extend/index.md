@@ -1,3 +1,9 @@
+::: warning 注意
+
+此文档已经过时, 请参阅 [Apifox 上的 Lagrange.OneBot 文档](https://lagrange-onebot.apifox.cn/) 以获取最新的 API 文档。
+
+:::
+
 # 拓展 API
 
 ## 获取收藏表情

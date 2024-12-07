@@ -138,10 +138,15 @@ export const oneBotSidebar = {
 					text: "快速部署 & 配置",
 					link: "/Lagrange.OneBot/Config/",
 				},
+				{
+					text: 'Apifox 上的 API 文档',
+					link: 'https://lagrange-onebot.apifox.cn/',
+				},
 			],
 		},
 		{
-			text: "API",
+			text: "API (Deprecated)",
+			collapsed: true,
 			items: [
 				{
 					text: "OneBot V11 标准 API",
@@ -213,11 +218,6 @@ export const oneBotSidebar = {
 						},
 					],
 				},
-			],
-		},
-		{
-			text: "Segment",
-			items: [
 				{
 					text: "OneBot V11 标准消息链",
 					link: "/Lagrange.OneBot/Segment/OneBot/",
