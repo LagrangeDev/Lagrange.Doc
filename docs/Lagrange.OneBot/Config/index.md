@@ -43,7 +43,7 @@ chmod +x ./Lagrange.OneBot
 
 :::
 
-第一次运行时, 会在同级目录下自动生成默认的 `appsettings.json` 配置文件, 你需要正确 [修改配置文件](#配置文件) 以设置 Lagrange
+第一次运行时, 会在同级目录下自动生成默认的 `appsettings.json` 配置文件, 你可以在[这里](https://lagrangedev.github.io/lagrange-config-generator/)生成配置文件并用生成的内容**覆盖**原本的 `appsettings.json`，或按照下文的指导正确[修改配置文件](#配置文件)以设置 Lagrange.
 
 在配置文件按需修改后（推荐使用扫码登录）, 在命令行中按任意键, Lagrange 将正式运行在同一文件夹下会出现一张登录二维码图片 qr-0.png, 在二维码过期前尽快使用手机 QQ 扫码连接
 
@@ -65,7 +65,7 @@ NTQQ 的 SignServer **不可与 Android 协议混用**（如 unidbg-fetch-qsign�
 
 ## 配置文件
 
-请注意几个重要的设置项需要手动配置：
+[Lagrange Config Generator](https://lagrangedev.github.io/lagrange-config-generator/) 简化了配置文件的生成过程. 你也可以参考下文的说明手动修改配置文件.
 
 ```json5{11-12,24-43}
 {
