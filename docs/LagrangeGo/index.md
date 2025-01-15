@@ -1,4 +1,4 @@
-# LagrengeGo
+# LagrangeGo
 
 ## 快速开始
 
