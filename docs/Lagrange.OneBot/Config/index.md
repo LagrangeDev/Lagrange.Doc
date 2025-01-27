@@ -81,8 +81,8 @@ NTQQ 的 SignServer **不可与 Android 协议混用**（如 unidbg-fetch-qsign�
   "SignProxyUrl": "", //留空不使用代理,仅支持http代理, example: http://127.0.0.1:7890
   "MusicSignServerUrl": "",
   "Account": {
-    "Uin": 0,  // Uin 填写 0 以使用扫码连接
-    "Password": "",  // 不填写密码以使用扫码连接
+    "Uin": 0,  // 用于识别 db 和 qrcode 文件, 无任何其他用途
+    "Password": "",  // 不再支持
     "Protocol": "Linux",  // 使用 Linux 协议
     "AutoReconnect": true,
     "GetOptimumServer": true,
