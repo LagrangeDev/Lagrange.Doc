@@ -69,6 +69,7 @@ NTQQ 的 SignServer **不可与 Android 协议混用**（如 unidbg-fetch-qsign�
 
 ```json5{11-12,24-43}
 {
+  "$schema": "https://raw.githubusercontent.com/LagrangeDev/Lagrange.Core/master/Lagrange.OneBot/Resources/appsettings_schema.json",
   "Logging": {
     "LogLevel": {
       "Default": "Information",  // 提 Issue 时请切换到 Trace
