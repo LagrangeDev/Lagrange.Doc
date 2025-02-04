@@ -19,3 +19,7 @@ NTQQ 的 SignServer 不可与 Android 协议混用 (如 unidbg-fetch-qsign)
 
 本项目不主动提供 SignServer, 请前往 README.md 加入 Telegram 群聊以获取有效信息
 :::
+
+## 从 LiteDB 迁移到 Realm
+
+使用 [Lagrange.OneBot.DatabaseShift](https://github.com/LagrangeDev/Lagrange.OneBot.DatabaseShift) 将 `lagrange-x.db` 数据库迁移到 `lagrange-x-db`, 将 `lagrange-x-db` 放在原先 `lagrange-x.db` 所在的目录, 启动即可迁移完成
