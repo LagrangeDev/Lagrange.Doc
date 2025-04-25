@@ -143,6 +143,10 @@ export const oneBotSidebar = {
 					link: "https://lagrangedev.github.io/lagrange-config-generator/",
 				},
 				{
+					text: "自动更新",
+					link: "/Lagrange.OneBot/AutoUpdate/",
+				},
+				{
 					text: 'Apifox 上的 API 文档',
 					link: 'https://lagrange-onebot.apifox.cn/',
 				},
