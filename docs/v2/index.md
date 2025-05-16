@@ -5,34 +5,30 @@ hero:
   name: Lagrange.Doc
   tagline: Lagrange V2 使用手册
   actions:
-    - text: 使用 Lagrange.Core
+    - text: 使用 Core
       link: ./Lagrange.Core/index
-    - text: 使用 Lagrange.NativeAPI
+    - text: 使用 Native API
       link: ./Lagrange.NativeAPI/index
-    - text: 使用 Lagrange.Milky
+    - text: 使用 Milky
       link: ./Lagrange.Milky/index
 ---
 
-# 简介
+Lagrange.Core 是一个开源的 NTQQ 协议实现，免责声明详见项目主页。
 
-Lagrange.Core 是一个开源的 NTQQ 协议实现, 当前处于稳定期, 免责声明详见项目主页
-
-目前推荐使用 Linux 协议登录
-
-## 示例
-
-### "已经是一名熟练的 C# Dev 了?"
+### "已经是一名熟练的 C# Dev 了？"
 
 前往 [Lagrange.Core](./Lagrange.Core/index.md) 查看 API 文档
 
-### "希望内置Lagrange.Core到你喜欢的语言？"
+### "希望内置到你喜欢的语言？"
 
-前往 [Lagrange.Core.NativeAPI](./Lagrange.Core.NativeAPI/index.md) 查看如何通过C ABI调用Lagrange.Core,提供64位的本机DLL和SO,支持C、C++、Go、Python、Rust等语言
+前往 [Lagrange.Core.NativeAPI](./Lagrange.Core.NativeAPI/index.md) 查看如何通过 C ABI 调用 Lagrange.Core，提供 64 位的本机 DLL 和 SO，支持 C、C++、Go、Python、Rust 等语言
 
-### "希望对接其他 Bot 框架 (此处应有框架名)"
+### "希望对接其他 Bot 框架 (~~NoneBot, Koishi, Saltify, etc~~)？"
 
-前往 [Lagrange.Milky](./Lagrange.Milky/index.md) 查看如何配置 `Lagrange.Milky`
+前往 [Lagrange.Milky](./Lagrange.Milky/index.md) 查看部署文档
 
-### "OneBot去哪里了?"
+### "……等等，Lagrange.OneBot 去哪里了？"
 
-由于OneBot协议的各种历史遗留问题([参见这里](https://milky.ntqqrev.org/guide/introduction.html)), LagrangeV2不再支持OneBot协议, V1的OneBot协议也不再维护, 请改用 [Lagrange.Milky](./Lagrange.Milky/index.md) 进行对接, 或者内置Lagrange.Core.NativeAPI到你喜欢的语言中, 直接调用Lagrange.Core的API
+由于 OneBot 11 协议的[各种历史遗留问题](https://milky.ntqqrev.org/guide/introduction.html)，我们最终决定，LagrangeV2 不再支持 OneBot 11 协议，V1 的 OneBot 11 协议实现也一并不再维护。
+
+推荐改用以上方式进行对接。
