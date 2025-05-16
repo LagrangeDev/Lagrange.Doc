@@ -22,6 +22,8 @@ jobs:
           yarn docs/v1:build
           yarn docs/v2:build
           mkdir -p docs/.vitepress/dist
+          mkdir -p docs/.vitepress/dist/v1
+          mkdir -p docs/.vitepress/dist/v2
           cp -r docs/v1/.vitepress/dist/* docs/.vitepress/dist/v1/
           cp -r docs/v2/.vitepress/dist/* docs/.vitepress/dist/v2/
           cp index.html docs/.vitepress/dist/
