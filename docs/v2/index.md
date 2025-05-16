@@ -27,14 +27,14 @@ Lagrange.Core 是一个开源的 NTQQ 协议实现, 当前处于稳定期, 免�
 
 前往 [Lagrange.Core](./Lagrange.Core/index.md) 查看 API 文档
 
-### "希望对接其他 Bot 框架 (NoneBot2, Koishi ...)"
+### "希望内置Lagrange.Core到你喜欢的语言？"
 
-前往 [Lagrange.OneBot](./Lagrange.OneBot/index.md) 查看如何配置 `Lagrange.OneBot`
+前往 [Lagrange.Core.NativeAPI](./Lagrange.Core.NativeAPI/index.md) 查看如何通过C ABI调用Lagrange.Core,提供64位的本机DLL和SO,支持C、C++、Go、Python、Rust等语言
 
-### "喜欢更简易轻量的golang？"
+### "希望对接其他 Bot 框架 (此处应有框架名)"
 
-前往 [LagrangeGo](LagrangeGo/index.md)
+前往 [Lagrange.Milky](./Lagrange.Milky/index.md) 查看如何配置 `Lagrange.Milky`
 
-### "喜欢使用Python？"
+### "OneBot去哪里了?"
 
-前往 [lagrange-python](lagrange-python/index.md)
+由于OneBot协议的各种历史遗留问题([参见这里](https://milky.ntqqrev.org/guide/introduction.html)), LagrangeV2不再支持OneBot协议, V1的OneBot协议也不再维护, 请改用 [Lagrange.Milky](./Lagrange.Milky/index.md) 进行对接, 或者内置Lagrange.Core.NativeAPI到你喜欢的语言中, 直接调用Lagrange.Core的API

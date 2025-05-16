@@ -1,6 +1,6 @@
 import { DefaultTheme } from "vitepress"
-import { coreSidebar, goSidebar, oneBotSidebar } from "./catalogue"
-import { coreNav, goNav, oneBotNav, pythonNav } from "./nav"
+import {coreSidebar, milkySidebar, nativeAPISidebar} from "./catalogue"
+import {coreNav, milkyNav, nativeAPINav} from "./nav"
 
 export const theme: DefaultTheme.Config = {
 	search: {
@@ -8,41 +8,31 @@ export const theme: DefaultTheme.Config = {
 	},
 	nav: [
 		{ text: "首页", link: "/" },
+		{
+			text: "版本",
+			base: "",
+			items: [
+				{text: "v1", link: "../v1/"},
+				{text: "v2", link: "/"}
+			]
+		},
 		coreNav,
-		oneBotNav,
-		goNav,
-		pythonNav,
+		nativeAPINav,
+		milkyNav,
 		{
 			text: "GitHub",
 			items: [
 				{
 					text: "Lagrange.Core",
-					link: "https://github.com/LagrangeDev/Lagrange.Core",
-				},
-				{
-					text: "LagrangeGo",
-					link: "https://github.com/LagrangeDev/LagrangeGo",
-				},
-				{
-					text: "lagrangejs",
-					link: "https://github.com/LagrangeDev/lagrangejs",
-				},
-				{
-					text: "lagrange-python",
-					link: "https://github.com/LagrangeDev/lagrange-python",
-				},
-				{
-					text: "Lagrange.Doc",
-					link: "https://github.com/LagrangeDev/Lagrange.Doc",
-				},
+					link: "https://github.com/LagrangeDev/LagrangeV2",
+				}
 			],
 		},
 	] as DefaultTheme.NavItem[],
 	sidebar: {
 		"/Lagrange.Core/": coreSidebar,
-		"/Lagrange.OneBot/": oneBotSidebar,
-		"/LagrangeGo/": goSidebar,
-		"/lagrange-python/": pythonNav
+		"/Lagrange.Core.NativeAPI/": nativeAPISidebar,
+		"/Lagrange.Milky/": milkySidebar
 	} as DefaultTheme.SidebarMulti,
 	socialLinks: [
 		{ icon: "github", link: "https://github.com/LagrangeDev/Lagrange.Doc" },

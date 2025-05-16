@@ -8,6 +8,14 @@ export const theme: DefaultTheme.Config = {
 	},
 	nav: [
 		{ text: "首页", link: "/" },
+		{
+			text: "版本",
+			base: "",
+			items: [
+				{text: "v1", link: "/"},
+				{text: "v2", link: "../v2/"}
+			]
+		},
 		coreNav,
 		oneBotNav,
 		goNav,

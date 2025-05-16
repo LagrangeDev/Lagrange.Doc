@@ -18,7 +18,13 @@ jobs:
       - run: yarn install --frozen-lockfile
 
       - name: Build
-        run: yarn docs:build
+        run: |
+          yarn docs/v1:build
+          yarn docs/v2:build
+          mkdir -p docs/.vitepress/dist
+          cp -r docs/v1/.vitepress/dist/* docs/.vitepress/dist/v1/
+          cp -r docs/v2/.vitepress/dist/* docs/.vitepress/dist/v2/
+          cp index.html docs/.vitepress/dist/
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
