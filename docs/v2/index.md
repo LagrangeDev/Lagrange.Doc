@@ -3,16 +3,14 @@ layout: home
 
 hero:
   name: Lagrange.Doc
-  tagline: Lagrange 使用手册
+  tagline: Lagrange V2 使用手册
   actions:
     - text: 使用 Lagrange.Core
       link: ./Lagrange.Core/index
-    - text: 使用 Lagrange.OneBot
-      link: ./Lagrange.OneBot/index
-    - text: 使用 LagrangeGo
-      link: ./LagrangeGo/index
-    - text: 使用 lagrange-python
-      link: ./lagrange-python/index
+    - text: 使用 Lagrange.NativeAPI
+      link: ./Lagrange.NativeAPI/index
+    - text: 使用 Lagrange.Milky
+      link: ./Lagrange.Milky/index
 ---
 
 # 简介

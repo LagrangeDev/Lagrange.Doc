@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: Lagrange.Doc
-  tagline: Lagrange 使用手册
+  tagline: Lagrange V1 使用手册
   actions:
     - text: 使用 Lagrange.Core
       link: ./Lagrange.Core/index
