@@ -12,8 +12,8 @@ export const theme: DefaultTheme.Config = {
 			text: "版本",
 			base: "",
 			items: [
-				{text: "v1", link: "/"},
-				{text: "v2", link: "../v2/"}
+				{text: "v1 (你在这里)", link: "/"},
+				{text: "v2", link: "https://lagrangedev.github.io/Lagrange.Doc/v2/"}
 			]
 		},
 		coreNav,
