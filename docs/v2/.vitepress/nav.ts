@@ -26,6 +26,10 @@ export const milkyNav = {
 		{
 			text: "Lagrange.Milky",
 			link: "/Lagrange.Milky/",
-		}
+		},
+		{
+			text: "快速开始",
+			link: "/Lagrange.Milky/Config/",
+		},
 	],
 }

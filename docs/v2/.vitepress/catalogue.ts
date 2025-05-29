@@ -27,6 +27,15 @@ export const milkySidebar = {
 		{
 			text: "Lagrange.Milky",
 			link: "/Lagrange.Milky/",
+		},
+		{
+			text: "快速开始",
+			items: [
+				{
+					text: "快速开始 & 配置",
+					link: "/Lagrange.Milky/Config/",
+				}
+			]
 		}
 	],
 }
