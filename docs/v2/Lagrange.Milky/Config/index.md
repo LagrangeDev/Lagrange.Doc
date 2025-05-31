@@ -1,10 +1,6 @@
-# 快速部署 & 配置
+# 启动 & 配置
 
-## 下载安装
-
-开发期可以从[Actions](https://github.com/LagrangeDev/LagrangeV2/actions/workflows/milky-build.yaml)下载最新的构建
-
-## 运行
+## 启动
 
 ::: code-group
 
@@ -21,69 +17,110 @@ chmod +x ./Lagrange.Milky
 
 :::
 
-第一次运行时, 会在同级目录下自动生成默认的 `appsettings.jsonc` 配置文件, 请按照下文的指导正确[修改配置文件](#配置文件)以设置 Lagrange.
+第一次运行时，会在同级目录下自动生成默认的 `appsettings.jsonc` 配置文件，同时控制台输出：
 
-在配置文件按需修改后（推荐使用扫码登录）, 重新运行, Lagrange 将正式运行在同一文件夹下会出现一张登录二维码图片 qrcode.png, 在二维码过期前尽快使用手机 QQ 扫码连接
+```text
+Please edit the configuration file
+and press any key to continue starting the application.
+```
 
-::: tip 提示
+请按照下文的指导正确修改配置文件，然后按任意键，Lagrange 将正式启动，并在同一文件夹下生成一张登录二维码图片 `qrcode.png`。在二维码过期前，请尽快使用手机 QQ 扫码连接。
+
+::: tip
 
 手机扫描登录二维码时, 推荐勾选「下次登录无需确认」
 
 :::
 
-::: warning 注意
-
-当前主签名尚未同步, 如出现签名相关错误请加入群获取Error签名地址
-
-:::
-
 ## 配置文件
 
-```json5{11-12,24-43}
-
+```json
 {
     "$schema": "https://json.schemastore.org/appsettings.json",
+
+    // 日志相关
     "Logging": {
+        // 日志等级相关
         "LogLevel": {
-            "Default": "Trace", // 开发阶段默认为 Trace, 提 Issue 时也请切换到 Trace
+            // 开发阶段默认为 Trace, 提 Issue 时也请切换到 Trace
+            "Default": "Trace",
         },
     },
+
     "Core": {
         "Server": {
-            // "AutoReconnect": true, // 自动重连
-            // "UseIPv6Network": false, // 使用 IPv6 网络
-            // "GetOptimumServer": true, // 获取最佳服务器
+            // 是否自动重连
+            // "AutoReconnect": true,
+
+            // 是否使用 IPv6 网络
+            // "UseIPv6Network": false,
+
+            // 是否使用最低延迟的服务器
+            // "GetOptimumServer": true,
         },
         "Signer": {
-            "Base": "https://sign.lagrangecore.org/api/sign", // 当前主签名尚未同步,请加入群获取Error签名地址 // 内置, 为 Cloudflare, 可能需要代理
-            "Version": "30366", // QQ版本号, 在不知道具体版本时不要修改
-            // "ProxyUrl": null, // 代理地址, 留空不使用代理, 仅支持 http 代理, example: http://127.0.0.1:7890
+            // 内置, 由 Cloudflare 提供保护, 访问可能需要代理
+            "Base": "https://sign.lagrangecore.org/api/sign",
+
+            // 使用的签名的 QQ 版本号, 在不知道具体版本时不要修改
+            "Version": "30366",
+
+            // 访问签名服务器所用的代理地址, 留空不使用代理, 仅支持 http 代理
+            // 例如 http://example.com:8080/
+            // "ProxyUrl": null,
         },
         "Login": {
-            "Uin": 0, // 为0表示使用扫码登录, 否则使用指定的 Uin 登录, 扫码的账号Uin不能与此处不一致
-            // "Password": null, // 密码
-            // "DeviceName": "LGR-Milky", // 设备名称, 可选
-            // "AutoReLogin": true, // 自动重连
-            // "CompatibleQrCode": false, // 兼容模式下的二维码, 扫不上可选
-            // "UseOnlineCaptchaResolver": true, // 使用在线Captcha解析器, 使用由 Lagrange 提供的验证码链接
+            // 扫码登录所用的 QQ 号
+            // 若与实际登录的 QQ 号不一致, 则再次启动时无法自动登录
+            "Uin": 0,
+
+            // 登录时使用的密码, 若不需要密码登录, 则留空
+            // "Password": null,
+
+            // 登录时使用的设备名称
+            // "DeviceName": "LGR-Milky",
+
+            // 在强制下线后是否自动重新登录
+            // "AutoReLogin": true,
+
+            // 是否启用二维码兼容模式
+            // 若控制台的二维码显示有问题, 可尝试开启此选项
+            // "CompatibleQrCode": false,
+
+            // 在使用安卓协议登录时, 是否使用 Lagrange 提供的在线验证码解析服务
+            // "UseOnlineCaptchaResolver": true,
         },
     },
+
+    // Milky 协议相关
     "Milky": {
-        "Host": "127.0.0.1", // 监听地址
-        "Port": 3000, // 监听端口
-        // "Prefix": "/", // 前缀, 可选, 默认为 "/"
-        // "UseWebSocket": true, // 是否使用 WebSocket, 默认为 true
-        // "WebHook": null, // Default WebHook 配置, 可选
+        // HTTP/WebSocket 服务绑定地址
+        "Host": "127.0.0.1",
+
+        // HTTP/WebSocket 服务监听端口
+        "Port": 3000,
+
+        // HTTP 和 WebSocket 服务的前缀路径
+        // 在使用反向代理将 Milky 服务置于其他路径下时需要设置
+        // "Prefix": "/",
+
+        // 是否开启 WebSocket 事件推送服务
+        // "UseWebSocket": true,
+
+        // HTTP/WebSocket 服务的访问令牌
+        // 若设置, 则需要在应用端配置中指定同样的 AccessToken
+        // "AccessToken": "123456"
+
+        // WebHook 相关配置, 留空则不启用 WebHook
         // "WebHook": {
-        //     "Url": "http://127.0.0.1:3001/webhook" // WebHook 地址, 可选
+        //     // WebHook 上报的 URL
+        //     "Url": "http://127.0.0.1:3001/webhook"
         // }
     },
 }
-
-
 ```
 
 ## 协议相关
 
-参见[Milky文档](https://milky.ntqqrev.org/guide/introduction.html), 此处不做过多赘述
+参见 [Milky 文档](https://milky.ntqqrev.org/guide/introduction.html)。
 

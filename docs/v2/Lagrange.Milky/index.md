@@ -1,19 +1,11 @@
 # Lagrange.Milky
 
-Milky协议实现, 支持与主流Bot框架通信。
+Lagrange.Milky 是 [Milky](https://milky.ntqqrev.org/) 协议的实现，可用于和 NoneBot 等机器人框架进行集成。
 
-## 获取方式
+## 获取
 
-1. [Actions](https://github.com/LagrangeDev/LagrangeV2/actions/workflows/milky-build.yaml)
+目前 Lagrange.Milky 尚未发布 Release，尝鲜构建版本可从 [Actions](https://github.com/LagrangeDev/LagrangeV2/actions/workflows/milky-build.yaml) 获取。使用过程中出现 Bug 请及时反馈。
 
-::: tip 提示
-
-AOT Publish 无需 .NET 运行时支持, 可直接运行。
-
-仅支持64位架构的win, linux, mac, 如需运行时支持其他架构, 请自行编译并使用JIT。
-
-:::
-
-## 部署 & 配置
-
-[快速部署 & 配置](/Lagrange.Milky/Config/)
+Lagrange.Milky 使用了 Native AOT 技术，**无需 .NET 运行时**，目前支持的平台如下：
+- Windows x64
+- Linux x64
