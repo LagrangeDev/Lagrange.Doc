@@ -15,4 +15,4 @@
 |  `OnGroupAdminChangedEvent`  |  LagrangeEvent\<GroupAdminChangedEvent>?  |             群管变更时触发             |
 | `OnGroupMemberIncreaseEvent` | LagrangeEvent\<GroupMemberIncreaseEvent>? |             有人入群时触发             |
 | `OnGroupMemberDecreaseEvent` | LagrangeEvent\<GroupMemberDecreaseEvent>? |             有人退群时触发             |
-| `OnGroupMemberDecreaseEvent` |    LagrangeEvent\<FriendRequestEvent>?    |            有好友申请时触发            |
+|     `FriendRequestEvent`     |    LagrangeEvent\<FriendRequestEvent>?    |            有好友申请时触发            |
