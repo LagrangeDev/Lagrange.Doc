@@ -1,6 +1,6 @@
 import { DefaultTheme } from "vitepress"
-import {coreSidebar, milkySidebar, nativeAPISidebar} from "./catalogue"
-import {coreNav, milkyNav, nativeAPINav} from "./nav"
+import {coreSidebar, nativeAPISidebar} from "./catalogue"
+import {coreNav, nativeAPINav} from "./nav"
 
 export const theme: DefaultTheme.Config = {
 	search: {
@@ -18,7 +18,6 @@ export const theme: DefaultTheme.Config = {
 		},
 		coreNav,
 		nativeAPINav,
-		milkyNav,
 		{
 			text: "GitHub",
 			items: [
@@ -32,7 +31,6 @@ export const theme: DefaultTheme.Config = {
 	sidebar: {
 		"/Lagrange.Core/": coreSidebar,
 		"/Lagrange.Core.NativeAPI/": nativeAPISidebar,
-		"/Lagrange.Milky/": milkySidebar
 	} as DefaultTheme.SidebarMulti,
 	socialLinks: [
 		{ icon: "github", link: "https://github.com/LagrangeDev/Lagrange.Doc" },

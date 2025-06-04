@@ -48,23 +48,3 @@ export const nativeAPISidebar = {
 		}
 	],
 }
-
-export const milkySidebar = {
-	text: "Lagrange.Milky",
-	base: "",
-	items: [
-		{
-			text: "Lagrange.Milky",
-			link: "/Lagrange.Milky/",
-		},
-		{
-			text: "快速开始",
-			items: [
-				{
-					text: "启动 & 配置",
-					link: "/Lagrange.Milky/Config/",
-				}
-			]
-		}
-	],
-}
