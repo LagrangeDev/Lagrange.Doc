@@ -23,6 +23,6 @@ Lagrange.Core 是一个开源的 NTQQ 协议实现，免责声明详见项目主
 
 ### "……等等，Lagrange.OneBot 去哪里了？"
 
-由于 OneBot 11 协议的[各种历史遗留问题](https://milky.ntqqrev.org/guide/introduction.html)，我们最终决定，LagrangeV2 不再支持 OneBot 11 协议，V1 的 OneBot 11 协议实现也一并不再维护。
+由于 OneBot 11 协议的[各种历史遗留问题](https://milky.ntqqrev.org/guide/background)，我们最终决定，LagrangeV2 不再支持 OneBot 11 协议，V1 的 OneBot 11 协议实现也一并不再维护。
 
 你可以使用以上方法或改用的 [Lagrange.Milky](https://lagrangedev.github.io/Lagrange.Milky.Document), Lagrange.Milky 是基于 LagrangeV2 的 [Milky](https://milky.ntqqrev.org) 协议实现
